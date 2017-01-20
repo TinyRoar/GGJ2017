@@ -62,6 +62,11 @@ public class Player : MonoBehaviour {
 
         // move
         transform.Translate(input * Speed * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            DoStomp();
+        }
     }
 
     public void DoWave()
@@ -94,6 +99,19 @@ public class Player : MonoBehaviour {
 
     }
 
+    private void DoStomp()
+    {
+        Collider[] objectsInRange = Physics.OverlapSphere(transform.position, Config.Instance.StompRadius);
+
+        foreach (Collider item in objectsInRange)
+        {
+            if (item.CompareTag("Player") && item.transform.parent != transform)
+            {
+                print("HAB DISCH!");
+            }
+        }
+    }
+
     private PlayerIndex GetPlayerIndex()
     {
         switch(PlayerNumber)
@@ -104,6 +122,12 @@ public class Player : MonoBehaviour {
                 return PlayerIndex.Two;
         }
         return PlayerIndex.One;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, Config.Instance.StompRadius);
     }
 
 }

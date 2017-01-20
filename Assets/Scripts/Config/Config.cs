@@ -14,5 +14,6 @@ public class Config : MonoSingleton<Config>
     public float VisibleSpeed = 0.8f;
     public float VibrationDistance = 10f;
     public bool DoVibration = false;
+    public float StompRadius = 5f;
 
 }
