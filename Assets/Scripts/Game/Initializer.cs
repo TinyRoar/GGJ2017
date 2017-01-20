@@ -6,5 +6,6 @@ public class Initializer : MonoSingleton<Initializer>
 {
     void Start () {
         MatchManager.Instance.Init();
+        PlayerManager.Instance.SpawnPlayer();
     }
 }
