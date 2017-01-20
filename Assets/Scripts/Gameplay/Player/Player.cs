@@ -28,6 +28,7 @@ public class Player : MonoBehaviour {
     void OnDestroy()
     {
         Updater.Instance.OnUpdate -= DoUpdate;
+        GamePad.SetVibration(GetPlayerIndex(), 0, 0);
     }
 
     void DoUpdate ()
@@ -92,11 +93,6 @@ public class Player : MonoBehaviour {
             GamePad.SetVibration(GetPlayerIndex(), vibrationValue, vibrationValue);
         }
 
-    }
-
-    void Destroy()
-    {
-        GamePad.SetVibration(GetPlayerIndex(), 0, 0);
     }
 
     private PlayerIndex GetPlayerIndex()
