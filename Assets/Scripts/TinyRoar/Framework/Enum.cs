@@ -3,25 +3,19 @@ public enum GameEnvironment
 {
     None,
     Default,
-    Bla,
 }
 
 public enum Layer {
     None,
     MainMenu,
     InGame,
+    Debug,
 }
 
 public enum GameplayStatus
 {
     None,
     MatchStart,
-    GameplayIdle,
-    UnitSelected,
-    UnitMoving,
-    UnitAttacking,
-    BattleStart,
-    RoundEnd,
 }
 
 public enum UIAction

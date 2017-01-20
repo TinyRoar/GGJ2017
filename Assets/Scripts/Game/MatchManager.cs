@@ -15,8 +15,8 @@ public class MatchManager : Singleton<MatchManager>
         switch (newMatchStatus)
         {
             case GameplayStatus.MatchStart:
-                UIManager.Instance.Switch(Layer.InGame, UIAction.Show);
-                UIManager.Instance.Switch(Layer.MainMenu, UIAction.Show);
+                //UIManager.Instance.Switch(Layer.InGame, UIAction.Show);
+                //UIManager.Instance.Switch(Layer.MainMenu, UIAction.Show);
                 break;
         }
 

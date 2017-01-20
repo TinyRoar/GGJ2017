@@ -82,15 +82,14 @@ public class Player : MonoBehaviour {
         // check distance between players 
         Player otherPlayer = PlayerManager.Instance.GetPlayerWithNotNumber(PlayerNumber);
         float distance = Vector3.Distance(this.transform.position, otherPlayer.transform.position);
-        Debug.Log(distance);
 
         // do vibration
         if (distance < Config.Instance.VibrationDistance)
         {
             float vibrationValue = 1 - (distance / Config.Instance.VibrationDistance);
-            Debug.Log(vibrationValue);
 
-            GamePad.SetVibration(GetPlayerIndex(), vibrationValue, vibrationValue);
+            if(Config.Instance.DoVibration)
+                GamePad.SetVibration(GetPlayerIndex(), vibrationValue, vibrationValue);
         }
 
     }

@@ -41,6 +41,8 @@ public class InitManager : MonoSingleton<InitManager>
 
     void Start ()
     {
+        UIManager.Instance.Init();
+
         // set FPS
         Application.targetFrameRate = FPS;
 
