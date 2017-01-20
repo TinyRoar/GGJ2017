@@ -16,6 +16,7 @@ public enum GameplayStatus
 {
     None,
     MatchStart,
+    MatchStop,
 }
 
 public enum UIAction

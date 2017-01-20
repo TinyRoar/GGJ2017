@@ -15,8 +15,19 @@ public class MatchManager : Singleton<MatchManager>
         switch (newMatchStatus)
         {
             case GameplayStatus.MatchStart:
-                //UIManager.Instance.Switch(Layer.InGame, UIAction.Show);
-                //UIManager.Instance.Switch(Layer.MainMenu, UIAction.Show);
+
+                // Start Timer
+                GameplayTimer.Instance.Enable();
+
+                // TODO Spawn Players
+
+                break;
+            case GameplayStatus.MatchStop:
+
+                // Stop Timer
+                GameplayTimer.Instance.Disable();
+
+                // TODO Disable or Destroy Players
                 break;
         }
 
