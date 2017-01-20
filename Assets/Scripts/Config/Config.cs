@@ -12,5 +12,6 @@ public class Config : MonoSingleton<Config>
     // Player
     [Header("Player")]
     public float VisibleSpeed = 0.8f;
+    public float VibrationDistance = 10f;
 
 }

@@ -1,26 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TinyRoar.Framework;
+using XInputDotNetPure;
 
 public class Player : MonoBehaviour {
 
     public float Speed = 4;
-    public PlayerNo PlayerNumber;
+    public PlayerNumber PlayerNumber;
     public bool Invisible = false;
+    public bool Vibration = false;
     private bool _curVisible = false;
     public Renderer Renderer;
 
-	void Start ()
+    void Start ()
     {
+        if(PlayerNumber == PlayerNumber.None)
+        {
+            Debug.LogWarning("Player has no PlayerNumber");
+            return;
+        }
 
-	}
-	
-	void Update ()
-    {
-        Movement();
+        PlayerManager.Instance.PlayerStorage.Add(this);
+        Updater.Instance.OnUpdate += DoUpdate;
     }
 
-    void Movement()
+    void OnDestroy()
+    {
+        Updater.Instance.OnUpdate -= DoUpdate;
+    }
+
+    void DoUpdate ()
+    {
+        DoMovement();
+        DoWave();
+        DoVibration();
+    }
+
+    public void DoMovement()
     {
         // get input
         Vector3 input = Vector3.zero;
@@ -44,12 +61,49 @@ public class Player : MonoBehaviour {
 
         // move
         transform.Translate(input * Speed * Time.deltaTime);
+    }
 
+    public void DoWave()
+    {
         // spawn wave
         if (_curVisible)
         {
-            Debug.Log("trigger wave");
+            // TODO trigger wave
         }
 
     }
+
+    public void DoVibration()
+    {
+        if (!Vibration)
+            return;
+
+        // check distance between players 
+        Player otherPlayer = PlayerManager.Instance.GetPlayerWithNotNumber(PlayerNumber);
+        float distance = Vector3.Distance(this.transform.position, otherPlayer.transform.position);
+        Debug.Log(distance);
+
+        // do vibration
+        if (distance < Config.Instance.VibrationDistance)
+        {
+            float vibrationValue = 1 - (distance / Config.Instance.VibrationDistance);
+            Debug.Log(vibrationValue);
+
+            GamePad.SetVibration(GetPlayerIndex(), vibrationValue, vibrationValue);
+        }
+
+    }
+
+    private PlayerIndex GetPlayerIndex()
+    {
+        switch(PlayerNumber)
+        {
+            case PlayerNumber.Player1:
+                return PlayerIndex.One;
+            case PlayerNumber.Player2:
+                return PlayerIndex.Two;
+        }
+        return PlayerIndex.One;
+    }
+
 }
