@@ -94,6 +94,11 @@ public class Player : MonoBehaviour {
 
     }
 
+    void Destroy()
+    {
+        GamePad.SetVibration(GetPlayerIndex(), 0, 0);
+    }
+
     private PlayerIndex GetPlayerIndex()
     {
         switch(PlayerNumber)
