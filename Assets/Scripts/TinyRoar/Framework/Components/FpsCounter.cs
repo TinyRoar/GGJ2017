@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using TinyRoar.Framework;
-using TinyRoar.TinyLytics;
+//using TinyRoar.TinyLytics;
 using System;
 
 /*
@@ -95,9 +95,9 @@ public class FpsCounter : MonoSingleton<FpsCounter>
         accum = 0.0F;
         frames = 0;
 
-        // Analytics
-        if(fps < 25 && TinyLytics.Instance.IsRunning)
-            TinyLytics.Instance.GameplayEvent("fps", Convert.ToInt32(fps));
+        //// Analytics
+        //if(fps < 25 && TinyLytics.Instance.IsRunning)
+        //    TinyLytics.Instance.GameplayEvent("fps", Convert.ToInt32(fps));
 
     }
 

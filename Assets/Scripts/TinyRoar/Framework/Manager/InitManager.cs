@@ -76,7 +76,7 @@ public class InitManager : MonoSingleton<InitManager>
     {
 
         DataManagement.Instance.ForceSaving();
-        TileManagement.Instance.ForceSaving();
+        //TileManagement.Instance.ForceSaving();
         //GroveManagement.Instance.ForceSaving();
 
         // Analytics

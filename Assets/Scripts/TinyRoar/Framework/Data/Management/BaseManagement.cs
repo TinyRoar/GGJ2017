@@ -110,9 +110,6 @@ namespace TinyRoar.Framework
                     this.Serialize<PairCollection>(typeof(Pair));
 
                     break;
-                case ManagementType.Grove:
-                    this.Serialize<TileCollection>(typeof(Tile));
-                    break;
             }
 
             Debug.Log("Save " + Management);
