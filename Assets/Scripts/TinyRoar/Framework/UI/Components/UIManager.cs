@@ -104,7 +104,10 @@ public class UIManager : MonoSingleton<UIManager>
         if (ActiveEnvironment != GameEnvironment.None)
             this.Hide(_environmentList[ActiveEnvironment]);
         if (_endTimerEnvironment != GameEnvironment.None)
+        {
+            Debug.Log(_endTimerEnvironment);
             this.Show(_environmentList[_endTimerEnvironment]);
+        }
         ActiveEnvironment = _endTimerEnvironment;
     }
 

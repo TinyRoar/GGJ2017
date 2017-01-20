@@ -3,19 +3,13 @@ public enum GameEnvironment
 {
     None,
     Default,
-    Selection,
-    WinScreen,
+    Bla,
 }
 
 public enum Layer {
     None,
     MainMenu,
-    WaitForOtherPlayers,
-    MatchSettings,
-    PlayerSelection,
     InGame,
-    ServerMessage
-    
 }
 
 public enum GameplayStatus
