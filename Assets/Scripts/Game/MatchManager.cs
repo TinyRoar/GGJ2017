@@ -14,6 +14,8 @@ public class MatchManager : Singleton<MatchManager>
 
         switch (newMatchStatus)
         {
+            case GameplayStatus.Menu:
+                break;
             case GameplayStatus.MatchStart:
 
                 // Start Timer
