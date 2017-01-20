@@ -9,5 +9,8 @@ public class Config : MonoSingleton<Config>
     // Config
     public Vector2i BaseScreenSize;
 
+    // Player
+    [Header("Player")]
+    public float VisibleSpeed = 0.8f;
 
 }
