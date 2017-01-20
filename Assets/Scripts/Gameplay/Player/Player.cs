@@ -5,8 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public float Speed = 4;
-    public enum playerNr { Player1_, Player2_};
-    public playerNr PlayerNumber;
+    public PlayerNo PlayerNumber;
 
 	void Start ()
     {
@@ -20,6 +19,6 @@ public class Player : MonoBehaviour {
 
     void Movement()
     {
-        transform.Translate(Input.GetAxis(PlayerNumber.ToString()+"Horizontal") * Speed * Time.deltaTime, 0, Input.GetAxis(PlayerNumber.ToString() + "Vertical") * Speed * Time.deltaTime);
+        transform.Translate(Input.GetAxis(PlayerNumber.ToString()+"_Horizontal") * Speed * Time.deltaTime, 0, Input.GetAxis(PlayerNumber.ToString() + "_Vertical") * Speed * Time.deltaTime);
     }
 }
