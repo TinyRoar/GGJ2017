@@ -10,6 +10,7 @@ public enum Layer {
     MainMenu,
     InGame,
     Debug,
+    End,
 }
 
 public enum GameplayStatus

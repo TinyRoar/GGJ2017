@@ -36,6 +36,11 @@ public class Player : MonoBehaviour {
         DoMovement();
         DoWave();
         DoVibration();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DoStomp();
+        }
     }
 
     public void DoMovement()
@@ -62,11 +67,6 @@ public class Player : MonoBehaviour {
 
         // move
         transform.Translate(input * Speed * Time.deltaTime);
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            DoStomp();
-        }
     }
 
     public void DoWave()
@@ -108,6 +108,7 @@ public class Player : MonoBehaviour {
             if (item.CompareTag("Player") && item.transform.parent != transform)
             {
                 print("HAB DISCH!");
+                Events.GameplayStatus = GameplayStatus.MatchStop;
             }
         }
     }

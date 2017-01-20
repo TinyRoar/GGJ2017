@@ -36,7 +36,7 @@ public class GameplayTimer : MonoSingleton<GameplayTimer> {
     void DoUpdate()
     {
         _time += Time.deltaTime;
-        Text.text = _time.ToString();
+        Text.text = (_time).ToString("n2");
     }
 
     public float GetTime()

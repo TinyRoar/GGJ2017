@@ -9,15 +9,30 @@ public class PlayerManager : MonoSingleton<PlayerManager> {
     public List<GameObject> PlayerPrefabs = new List<GameObject>();
     public List<Transform> SpawnPoints = new List<Transform>();
 
+    private bool _spawned = false;
+
     void Start()
     {
     }
 
     public void SpawnPlayer()
     {
+        if (_spawned)
+            return;
+        _spawned = true;
+
         for (int i = 0; i < SpawnPoints.Count; i++)
         {
             GameObject.Instantiate(PlayerPrefabs[i], SpawnPoints[i].position, Quaternion.identity);
+        }
+    }
+
+    public void ResetPlayer()
+    {
+        for (int i = 0; i < PlayerStorage.Count; i++)
+        {
+            PlayerStorage[i].transform.position = SpawnPoints[i].position;
+            PlayerStorage[i].transform.rotation = Quaternion.identity;
         }
     }
 
