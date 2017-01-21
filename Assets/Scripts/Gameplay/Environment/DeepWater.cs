@@ -11,7 +11,7 @@ public class DeepWater : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        other.transform.parent.GetComponent<Player>().TrySetValueToSkill<SlowerInDeepWater>(0);
+        other.transform.parent.GetComponent<Player>().TrySetValueToSkill<SlowerInDeepWater>(10);
     }
 
 }

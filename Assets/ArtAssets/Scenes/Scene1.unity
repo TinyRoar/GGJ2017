@@ -240,7 +240,12 @@ Prefab:
       propertyPath: DefaultGameplayStatus
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11480288, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
+      propertyPath: Debug
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400824, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &159730247 stripped
@@ -856,7 +861,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c25cc5b24696f2643bcd07820be5b31d, type: 3}
   - {fileID: 8300000, guid: 435d414bcd0bd5b4f9c48cc837bb413a, type: 3}
   - {fileID: 8300000, guid: c1102977ef1cda2469367fea8d15756c, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 63b89ea71fa3f6b4397212cad04bbca6, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -875,7 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 40
+  Speed: 1
   MovingVisibleSec: 1
   MovingVanishSec: 1
   CampVisibleSec: 5
@@ -883,7 +888,7 @@ MonoBehaviour:
   InvisibleSpeed: 0.8
   CampDistance: 3
   CampCheckInterval: 2
-  DoVibration: 1
+  DoVibration: 0
   VibrationDistance: 20
   StompRadius: 5
   StompCoolDown: 5

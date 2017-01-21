@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TinyRoar.Framework;
 using UnityEngine;
 
 public class Movement : Skill
 {
     private bool _slowerMovementInDeepWater;
+    private bool _isRunning;
     private Vector3 input = Vector3.zero;
     private int speedHash = Animator.StringToHash("MovementSpeed");
+    private int _soundId = 1;
+    private float _visibilityValue;
 
     public override void Enable()
     {
         _slowerMovementInDeepWater = false;
+        _isRunning = false;
     }
 
     public override void Disable()
@@ -67,11 +72,52 @@ public class Movement : Skill
     {
         if(value == 1)
         {
+            // now deep water
             _slowerMovementInDeepWater = true;
         }
-        else if(value == 0)
+        else if(value == 10)
         {
+            // deep water end
             _slowerMovementInDeepWater = false;
+        }
+        else if (value == 2)
+        {
+            // running begin
+            _isRunning = true;
+        }
+        else if (value == 3)
+        {
+            // running end
+            _isRunning = false;
+        }
+        else if (value == 4 || value == 5)
+        {
+            // play sound left/right foot
+
+            String playerName = player.PlayerNumber == PlayerNumber.Player1 ? "Lono" : "Laka";
+
+            String runOrStep = "Run";
+            if(player.PlayerNumber == PlayerNumber.Player2)
+            {
+                if(_isRunning == false)
+                    runOrStep = "Step";
+                if (_visibilityValue <= 0.5)
+                    return;
+            }
+            else if (player.PlayerNumber == PlayerNumber.Player1 && _slowerMovementInDeepWater == true)
+                runOrStep = "Deep";
+
+            //Debug.Log("play sound " + playerName + runOrStep + _soundId);
+            SoundManager.Instance.Play(playerName + runOrStep + _soundId, SoundManager.SoundType.Soundeffect, false, 1);
+
+            _soundId++;
+            if (_soundId == 3)
+                _soundId = 1;
+
+        }
+        else
+        {
+            _visibilityValue = value;
         }
     }
 

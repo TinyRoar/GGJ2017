@@ -75,10 +75,12 @@ public class Invisibility : Skill
         if (!_curVisible && input.magnitude > Config.Instance.InvisibleSpeed)
         {
             _curVisible = true;
+            player.TrySetValueToSkill<Movement>(2);
         }
         else if (_curVisible && input.magnitude < Config.Instance.InvisibleSpeed)
         {
             _curVisible = false;
+            player.TrySetValueToSkill<Movement>(3);
         }
 
         // smooth increase / decrease of move visibility
@@ -102,6 +104,9 @@ public class Invisibility : Skill
             if (_visibilityValue >= 1)
                 _visibilityValue = 1;
         }
+
+        if(_visibilityValue < 1)
+            player.TrySetValueToSkill<Movement>(_visibilityValue);
 
         // update visibility
         Color color = _material.color;

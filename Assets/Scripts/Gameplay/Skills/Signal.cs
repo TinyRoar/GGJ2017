@@ -30,7 +30,7 @@ public class Signal : Skill
             _cooldownTime = 0;
 
             // play sound
-            //SoundManager.Instance.Play("signal1", SoundManager.SoundType.Soundeffect, false, 1);
+            SoundManager.Instance.Play("LonoWhistle", SoundManager.SoundType.Soundeffect, false, 1);
 
             // play sound 2
             Player otherPlayer = player.GetOtherPlayer();

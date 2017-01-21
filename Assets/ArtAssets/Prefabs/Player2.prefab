@@ -956,8 +956,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNumber: 2
-  ModelTransform: {fileID: 0}
-  ModelAnimator: {fileID: 0}
+  ModelTransform: {fileID: 4388456256903146}
+  ModelAnimator: {fileID: 95672658929808116}
   SkillTypeList: 010000000200000006000000
 --- !u!135 &135982630347719426
 SphereCollider:
