@@ -11,13 +11,15 @@ public class Config : MonoSingleton<Config>
 
     // Player
     [Header("Player")]
-    public float VisibleSpeed = 0.8f;
+    public float Speed = 0.8f;
     public float VibrationDistance = 10f;
     public bool DoVibration = false;
     public float StompRadius = 5f;
-    public float MovingCompleteVisibleAfterSeconds = 1f;
-    public float MovingCompleteInvisibleAfterSeconds = 1f;
-    public float CampCompleteVisibleAfterSeconds = 2f;
+    public float StompCoolDown = 5f;
+    public float MovingVisibleSec = 1f;
+    public float MovingVanishSec = 1f;
+    public float CampVisibleSec = 2f;
+    public float CampVanishSec = 2f;
     public float TooLowDistanceIn1Sec = 2f;
 
 }
