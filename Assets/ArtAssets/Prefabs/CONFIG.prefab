@@ -68,6 +68,7 @@ MonoBehaviour:
   SignalRadius: 15
   SignalCoolDown: 3
   StepsVolume: 0.7
+  Timer: 90
   BaseScreenSize:
     x: 1920
     y: 1080
@@ -87,14 +88,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 762f03e283218db40bb553353856a66c, type: 3}
   - {fileID: 8300000, guid: 9b074f55d422210448e83bdf3d56d166, type: 3}
   - {fileID: 8300000, guid: 064fc3d6ff5b95a44b736baefdb4fd72, type: 3}
-  - {fileID: 8300000, guid: 037b2d04e4909e74c9f3c97fd9f9df98, type: 3}
-  - {fileID: 8300000, guid: abc9616506e5ced4c80c51b97739ea42, type: 3}
+  - {fileID: 8300000, guid: 61c78bd04a1b70c43a00ebe61ffdbeac, type: 3}
+  - {fileID: 8300000, guid: 2d6559a1aaf6da54fb0635f854196c0c, type: 3}
   - {fileID: 8300000, guid: 035309a43e3a2284891ad5ada7ab421c, type: 3}
   - {fileID: 8300000, guid: 6924516fef545504685d375e15852c8f, type: 3}
   - {fileID: 8300000, guid: 3f9b31250e0f0be41992037bb7926184, type: 3}
   - {fileID: 8300000, guid: 8c9797a7a73eba840bc8e9f48d605e59, type: 3}
-  - {fileID: 8300000, guid: f09699ee1ae1b5c45bdaed6dc43e2e07, type: 3}
-  - {fileID: 8300000, guid: c2b051e67e30c4147b5711ffc2aaf51a, type: 3}
+  - {fileID: 8300000, guid: 77c86577f83e99940a7f485b9b3a62d0, type: 3}
+  - {fileID: 8300000, guid: 8ba1f51c9d437f547ba9625cd11a7eaf, type: 3}
   - {fileID: 8300000, guid: 63b89ea71fa3f6b4397212cad04bbca6, type: 3}
   - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
   - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
