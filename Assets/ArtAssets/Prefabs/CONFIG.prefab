@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1052936369043552}
+  m_RootGameObject: {fileID: 1771322189342022}
   m_IsPrefabParent: 1
---- !u!1 &1052936369043552
+--- !u!1 &1771322189342022
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4635843069298104}
-  - component: {fileID: 114822346326799646}
-  - component: {fileID: 114684258744995616}
+  - component: {fileID: 4428394662993802}
+  - component: {fileID: 114493701553969488}
+  - component: {fileID: 114888652865531442}
   m_Layer: 0
   m_Name: CONFIG
   m_TagString: Untagged
@@ -28,54 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4635843069298104
+--- !u!4 &4428394662993802
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1052936369043552}
+  m_GameObject: {fileID: 1771322189342022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.330423, y: 21.822037, z: -2.375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114684258744995616
+--- !u!114 &114493701553969488
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1052936369043552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94e478a4072e99247947ae677baa289b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioList:
-  - {fileID: 8300000, guid: c72f98187f1d34345ac5d7c965026b92, type: 3}
-  - {fileID: 8300000, guid: 67ee5055cc5e5fb4d8e6a2495f582c8b, type: 3}
-  - {fileID: 8300000, guid: dd753e2ef84fb3044976196fa22e0af7, type: 3}
-  - {fileID: 8300000, guid: 1cd9d307d3d653c42a1e18b91b7e372b, type: 3}
-  - {fileID: 8300000, guid: 116da34b86b9bbf4d96ef10161a0eb88, type: 3}
-  - {fileID: 8300000, guid: 7ac29105c3c7ac448805a8dda6441f9a, type: 3}
-  - {fileID: 8300000, guid: 04802cb056daa894eb5738b72796b465, type: 3}
-  - {fileID: 8300000, guid: fa4236fb1e680c745b5443b9e7faadcf, type: 3}
-  - {fileID: 8300000, guid: c6238caeb93bab24fb44801994971c09, type: 3}
-  - {fileID: 8300000, guid: 5e369269a82301849ad45338fbb93b05, type: 3}
-  - {fileID: 8300000, guid: 7f9c31b3a1854204abc203ab59f4bc81, type: 3}
-  - {fileID: 8300000, guid: 8821746af0984f74a81acdcfc87ca468, type: 3}
-  - {fileID: 8300000, guid: 63b89ea71fa3f6b4397212cad04bbca6, type: 3}
-  - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
-  - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
-  - {fileID: 8300000, guid: 056357fa0b1ebd84aa35f21dbc5eb2bf, type: 3}
-  BgMusic: []
---- !u!114 &114822346326799646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1052936369043552}
+  m_GameObject: {fileID: 1771322189342022}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
@@ -99,3 +70,32 @@ MonoBehaviour:
   BaseScreenSize:
     x: 1920
     y: 1080
+--- !u!114 &114888652865531442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771322189342022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e478a4072e99247947ae677baa289b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioList:
+  - {fileID: 8300000, guid: 9c13ca3900518bf4e8a90498b9e9574d, type: 3}
+  - {fileID: 8300000, guid: 762f03e283218db40bb553353856a66c, type: 3}
+  - {fileID: 8300000, guid: 9b074f55d422210448e83bdf3d56d166, type: 3}
+  - {fileID: 8300000, guid: 064fc3d6ff5b95a44b736baefdb4fd72, type: 3}
+  - {fileID: 8300000, guid: 037b2d04e4909e74c9f3c97fd9f9df98, type: 3}
+  - {fileID: 8300000, guid: abc9616506e5ced4c80c51b97739ea42, type: 3}
+  - {fileID: 8300000, guid: 035309a43e3a2284891ad5ada7ab421c, type: 3}
+  - {fileID: 8300000, guid: 6924516fef545504685d375e15852c8f, type: 3}
+  - {fileID: 8300000, guid: 3f9b31250e0f0be41992037bb7926184, type: 3}
+  - {fileID: 8300000, guid: 8c9797a7a73eba840bc8e9f48d605e59, type: 3}
+  - {fileID: 8300000, guid: f09699ee1ae1b5c45bdaed6dc43e2e07, type: 3}
+  - {fileID: 8300000, guid: c2b051e67e30c4147b5711ffc2aaf51a, type: 3}
+  - {fileID: 8300000, guid: 63b89ea71fa3f6b4397212cad04bbca6, type: 3}
+  - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
+  - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
+  - {fileID: 8300000, guid: 056357fa0b1ebd84aa35f21dbc5eb2bf, type: 3}
+  BgMusic: []
