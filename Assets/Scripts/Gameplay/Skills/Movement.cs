@@ -50,7 +50,11 @@ public class Movement : Skill
             multiply = Config.Instance.DeepWaterMultiply;
 
         // move
-        player.transform.Translate(input * Config.Instance.Speed * Time.deltaTime * multiply);
+        float speed = Config.Instance.Speed;
+        if(player.PlayerNumber == PlayerNumber.Player2)
+            speed = Config.Instance.SpeedPlayer2;
+
+        player.transform.Translate(input * speed * Time.deltaTime * multiply);
 
     }
 

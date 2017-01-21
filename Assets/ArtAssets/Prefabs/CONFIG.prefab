@@ -57,9 +57,9 @@ MonoBehaviour:
   MovingVanishSec: 1
   CampVisibleSec: 5
   DeepWaterMultiply: 0.4
-  InvisibleSpeed: 0.8
-  CampDistance: 3
-  CampCheckInterval: 0.5
+  InvisibleSpeed: 0.9
+  CampDistance: 0.1
+  CampCheckInterval: 1
   DoVibration: 1
   VibrationDistance: 5
   StompRadius: 5
