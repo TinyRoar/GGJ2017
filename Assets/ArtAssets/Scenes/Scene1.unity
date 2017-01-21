@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44658017, g: 0.49641502, b: 0.57482153, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -878,9 +878,11 @@ MonoBehaviour:
   Speed: 40
   MovingVisibleSec: 1
   MovingVanishSec: 1
-  CampVisibleSec: 2
+  CampVisibleSec: 5
+  DeepWaterMultiply: 0.4
   InvisibleSpeed: 0.8
-  TooLowDistanceIn1Sec: 2
+  CampDistance: 3
+  CampCheckInterval: 2
   DoVibration: 1
   VibrationDistance: 20
   StompRadius: 5
