@@ -20,4 +20,5 @@ public enum SkillType
     Stomp,
     Signal,
     Wave,
+    SlowerInDeepWater,
 }
