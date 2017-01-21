@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class OpenCloseButton : BaseButton
 {
     // config
+    public bool ExitGame = false;
     public GameEnvironment Environment;
     public bool UseBlend;
     public float Delay;
@@ -17,6 +18,9 @@ public class OpenCloseButton : BaseButton
     // action
     protected override void ButtonAction()
     {
+        if (ExitGame)
+            Application.Quit();
+
         int count = ActionList.Count;
         for (var i = 0; i < count; i++)
         {

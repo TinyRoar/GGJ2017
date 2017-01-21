@@ -29,6 +29,8 @@ public class Signal : Skill
         {
             _cooldownTime = 0;
 
+            GameObject.Instantiate(base.player.WhistleParticlePrefab, base.player.transform.position, Quaternion.identity);
+
             // play sound 1
             Timer.Instance.Add(0.01f, delegate
             {
