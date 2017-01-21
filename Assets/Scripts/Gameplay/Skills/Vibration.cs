@@ -23,6 +23,10 @@ public class Vibration : Skill
 
     public override void DoUpdate()
     {
+        // dont vibrate if no controller connected
+        if (GamePad.GetState(base.player.GetPlayerIndex()).IsConnected == false)
+            return;
+        
         // check distance between players 
         Player otherPlayer = PlayerManager.Instance.GetPlayerWithNotNumber(player.PlayerNumber);
         float distance = Vector3.Distance(player.transform.position, otherPlayer.transform.position);
