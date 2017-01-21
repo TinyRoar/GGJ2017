@@ -2612,6 +2612,7 @@ GameObject:
   - component: {fileID: 442460567}
   - component: {fileID: 442460566}
   - component: {fileID: 442460565}
+  - component: {fileID: 442460572}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -2635,7 +2636,7 @@ MonoBehaviour:
   hdr: 0
   sepBlurSpread: 1.96
   quality: 1
-  bloomIntensity: 0.02
+  bloomIntensity: 0.17
   bloomThreshold: 0.43
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
@@ -2669,10 +2670,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  intensity: 0.156
+  intensity: 0.198
   chromaticAberration: 0.2
   axialAberration: 0.5
-  blur: 0.024
+  blur: 0.06
   blurSpread: 0.75
   luminanceDependency: 0.25
   blurDistance: 2.5
@@ -2748,6 +2749,23 @@ Transform:
   m_Father: {fileID: 357759813}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 40.634003, y: 0, z: 0}
+--- !u!114 &442460572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 442460564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22b3a7095a744a428c134b5e26ad68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  quality: 2
+  blurArea: 1.72
+  maxBlurSize: 4.7
+  downsample: 0
+  tiltShiftShader: {fileID: 4800000, guid: bf34d2a25450349699e8ae6456fa7ca9, type: 3}
 --- !u!1 &449044552
 GameObject:
   m_ObjectHideFlags: 0
