@@ -25,7 +25,7 @@ public class Stomp : Skill
     {
         _cooldownTime += Time.deltaTime;
 
-        //if(_cooldownTime >= Config.Instance.StompCooldown)
+        if(_cooldownTime >= Config.Instance.StompCoolDown)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
