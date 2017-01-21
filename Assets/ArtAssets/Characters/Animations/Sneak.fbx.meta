@@ -105,7 +105,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.22627737
-        functionName: RightFoot
+        functionName: LeftFoot
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
