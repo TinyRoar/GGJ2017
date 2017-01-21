@@ -6,7 +6,7 @@ public abstract class Skill {
 
     protected Player player;
 
-    public void SetPlayer(Player player)
+    public virtual void SetPlayer(Player player)
     {
         this.player = player;
     }
