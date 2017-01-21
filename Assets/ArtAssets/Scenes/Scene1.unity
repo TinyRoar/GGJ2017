@@ -1894,7 +1894,7 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 4418146753932376, guid: eb1e67e8dad0a6c43be67c01e497c9e2,
     type: 2}
-  m_PrefabInternal: {fileID: 1614611290}
+  m_PrefabInternal: {fileID: 1608914351}
 --- !u!1 &335155473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,7 +2106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &368170517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9605,7 +9605,7 @@ Transform:
   m_Father: {fileID: 1735512177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -7.288582, y: -20.65228, z: 2.1314955}
---- !u!1001 &1614611290
+--- !u!1001 &1608914351
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
