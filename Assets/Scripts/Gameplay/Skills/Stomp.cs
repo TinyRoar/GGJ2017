@@ -25,13 +25,10 @@ public class Stomp : Skill
     {
         _cooldownTime += Time.deltaTime;
 
-        if(_cooldownTime >= Config.Instance.StompCoolDown)
+        if(player.pressedA && _cooldownTime >= Config.Instance.StompCoolDown)
         {
-            if (player.pressedA)
-            {
-                _cooldownTime = 0;
-                DoStomp();
-            }
+            _cooldownTime = 0;
+            DoStomp();
         }
 
     }

@@ -16,7 +16,6 @@ public class Player : MonoBehaviour {
     public List<Skill> SkillList;
 
     private GamePadState state;
-    private GamePadState prevState;
     public bool pressedA { get; private set; }
     public bool pressedB { get; private set; }
 
@@ -81,6 +80,8 @@ public class Player : MonoBehaviour {
 
     void DoUpdate ()
     {
+        DoControls();
+
         foreach (var skill in SkillList)
         {
             skill.DoUpdate();
@@ -124,7 +125,7 @@ public class Player : MonoBehaviour {
 
     private void DoControls()
     {
-        prevState = state;
+        GamePadState prevState = state;
         state = GamePad.GetState(GetPlayerIndex());
 
         // Detect if a button was pressed/release this frame
@@ -138,6 +139,7 @@ public class Player : MonoBehaviour {
             pressedB = true;
         if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
             pressedB = false;
+
     }
 
 }
