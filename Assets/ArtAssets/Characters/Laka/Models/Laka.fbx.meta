@@ -59,7 +59,10 @@ ModelImporter:
     400048: mixamorig:Spine1
     400050: mixamorig:Spine2
     400052: unamed
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: unamed
+    4300002: Laka
     9500000: //RootNode
     13700000: unamed
   materials:
