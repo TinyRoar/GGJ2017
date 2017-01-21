@@ -4,6 +4,8 @@ using TinyRoar.Framework;
 
 public class MatchManager : Singleton<MatchManager>
 {
+    private AudioSource _ingameAudio;
+
     public void Init()
     {
         Events.Instance.OnGameplayStatusChange += GameplayStatusChange;
@@ -17,6 +19,10 @@ public class MatchManager : Singleton<MatchManager>
             case GameplayStatus.Menu:
                 break;
             case GameplayStatus.MatchStart:
+
+                if (_ingameAudio != null)
+                    SoundManager.Instance.Stop(_ingameAudio);
+                _ingameAudio = SoundManager.Instance.Play("WaterAmbience1", SoundManager.SoundType.Music, true, 1);
 
                 // Start Timer
                 GameplayTimer.Instance.Enable();

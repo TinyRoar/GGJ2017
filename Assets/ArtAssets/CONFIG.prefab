@@ -65,14 +65,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1c9985154581ecb47b2bd8fce46006b6, type: 3}
   - {fileID: 8300000, guid: c25cc5b24696f2643bcd07820be5b31d, type: 3}
   - {fileID: 8300000, guid: 435d414bcd0bd5b4f9c48cc837bb413a, type: 3}
-  - {fileID: 8300000, guid: 056357fa0b1ebd84aa35f21dbc5eb2bf, type: 3}
+  - {fileID: 8300000, guid: c1102977ef1cda2469367fea8d15756c, type: 3}
   - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
   - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 056357fa0b1ebd84aa35f21dbc5eb2bf, type: 3}
   BgMusic: []
 --- !u!114 &114622274583163006
 MonoBehaviour:
