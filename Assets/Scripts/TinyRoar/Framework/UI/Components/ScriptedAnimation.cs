@@ -11,9 +11,9 @@ public class ScriptedAnimation : MonoBehaviour {
     void Update () {
         this.transform.position += Position * Time.deltaTime;
         this.transform.rotation = Quaternion.Euler(
-            this.transform.rotation.x + Rotation.x * Time.deltaTime,
-            this.transform.rotation.y + Rotation.y * Time.deltaTime,
-            this.transform.rotation.z + Rotation.z * Time.deltaTime
+            this.transform.rotation.eulerAngles.x + Rotation.x * Time.deltaTime,
+            this.transform.rotation.eulerAngles.y + Rotation.y * Time.deltaTime,
+            this.transform.rotation.eulerAngles.z + Rotation.z * Time.deltaTime
         );
         this.transform.localScale += Scale * Time.deltaTime;
     }
