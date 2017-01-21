@@ -102,4 +102,13 @@ public class Player : MonoBehaviour {
         Gizmos.DrawWireSphere(transform.position, Config.Instance.StompRadius);
     }
 
+    public void TrySetValueToSkill<T>(float value)
+    {
+        foreach (var skill in SkillList)
+        {
+            if (skill is T)
+                skill.SetValue(value);
+        }
+    }
+
 }

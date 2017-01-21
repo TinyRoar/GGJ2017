@@ -15,5 +15,9 @@ public abstract class Skill {
     public abstract void Disable();
     public abstract void Destroy();
     public abstract void DoUpdate();
+    public virtual void SetValue(float value)
+    {
+
+    }
 
 }
