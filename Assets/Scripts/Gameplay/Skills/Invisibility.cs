@@ -68,8 +68,8 @@ public class Invisibility : Skill
     public void DoVisibility()
     {
         Vector3 input = Vector3.zero;
-        input.x = Input.GetAxis(player.PlayerNumber.ToString() + "_Horizontal");
-        input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
+        input.x = base.player.GetGamePadState().ThumbSticks.Left.X + Input.GetAxis(player.PlayerNumber.ToString() + "_Horizontal");
+        input.z = base.player.GetGamePadState().ThumbSticks.Left.Y + Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
 
         // enable / disable visibility
         if (!_curVisible && input.magnitude > Config.Instance.InvisibleSpeed)
