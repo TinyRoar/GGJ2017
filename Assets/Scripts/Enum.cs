@@ -10,3 +10,14 @@ public enum PlayerType
     Hunter,
     Hunted,
 }
+
+public enum SkillType
+{
+    None,
+    Movement,
+    Invisibility,
+    Vibration,
+    Stomp,
+    Signal,
+    Wave,
+}

@@ -137,11 +137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f55f5364889a7e41bf23b10efac937d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 20
   PlayerNumber: 2
   Invisible: 1
   Vibration: 0
   Renderer: {fileID: 23657482038764968}
+  SkillTypeList: 010000000200000006000000
 --- !u!135 &135982630347719426
 SphereCollider:
   m_ObjectHideFlags: 1

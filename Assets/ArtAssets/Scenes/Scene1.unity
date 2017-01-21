@@ -864,6 +864,8 @@ MonoBehaviour:
   StompRadius: 5
   MovingCompleteVisibleAfterSeconds: 0.5
   MovingCompleteInvisibleAfterSeconds: 0.5
+  CampCompleteVisibleAfterSeconds: 2
+  TooLowDistanceIn1Sec: 2
 --- !u!1 &1353116515
 GameObject:
   m_ObjectHideFlags: 0
