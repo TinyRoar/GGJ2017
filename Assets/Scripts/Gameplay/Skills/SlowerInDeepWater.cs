@@ -30,10 +30,10 @@ public class SlowerInDeepWater : Skill
             _activated = true;
             player.TrySetValueToSkill<Movement>(1);
         }
-        if (value == 0 && _activated == true)
+        if (value == 10 && _activated == true)
         {
             _activated = false;
-            player.TrySetValueToSkill<Movement>(0);
+            player.TrySetValueToSkill<Movement>(10);
         }
     }
 }
