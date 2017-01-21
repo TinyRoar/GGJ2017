@@ -10,6 +10,7 @@ public class AnimationEvent : MonoBehaviour {
     public Transform RightFootTransform;
 
     public bool menu = false;
+    public float addHeight = 0;
 
     private Vector3 spawnPos = Vector3.zero;
 
@@ -17,6 +18,7 @@ public class AnimationEvent : MonoBehaviour {
     {
         spawnPos = LeftFootTransform.position;
         spawnPos.y = 0;
+        spawnPos.y += addHeight;
 
         DoStep();
 
@@ -31,6 +33,7 @@ public class AnimationEvent : MonoBehaviour {
     {
         spawnPos = RightFootTransform.position;
         spawnPos.y = 0;
+        spawnPos.y += addHeight;
 
         DoStep();
 
