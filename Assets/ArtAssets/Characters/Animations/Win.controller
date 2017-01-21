@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: LakaWin
+  m_Name: Win
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: MovementSpeed
