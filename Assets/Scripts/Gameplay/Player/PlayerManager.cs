@@ -9,6 +9,8 @@ public class PlayerManager : MonoSingleton<PlayerManager> {
     public List<GameObject> PlayerPrefabs = new List<GameObject>();
     public List<Transform> SpawnPoints = new List<Transform>();
 
+    public bool Player1and2Changed = true;
+
     private bool _spawned = false;
 
     void Start()

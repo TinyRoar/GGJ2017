@@ -21,6 +21,9 @@ public class MatchManager : Singleton<MatchManager>
                 break;
             case GameplayStatus.MatchStart:
 
+                // change players every round
+                PlayerManager.Instance.Player1and2Changed = PlayerManager.Instance.Player1and2Changed ? false : true;
+
                 if (_ingameAudio != null)
                     SoundManager.Instance.Stop(_ingameAudio);
                 _ingameAudio = SoundManager.Instance.Play("WaterAmbience1", SoundManager.SoundType.Music, true, 1);

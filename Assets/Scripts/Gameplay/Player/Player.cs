@@ -92,8 +92,12 @@ public class Player : MonoBehaviour {
         switch(PlayerNumber)
         {
             case PlayerNumber.Player1:
+                if(PlayerManager.Instance.Player1and2Changed)
+                    return PlayerIndex.Two;
                 return PlayerIndex.One;
             case PlayerNumber.Player2:
+                if (PlayerManager.Instance.Player1and2Changed)
+                    return PlayerIndex.One;
                 return PlayerIndex.Two;
         }
         return PlayerIndex.One;
