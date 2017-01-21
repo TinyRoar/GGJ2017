@@ -115,4 +115,9 @@ public class Invisibility : Skill
 
     }
 
+    public override float GetValue(float value)
+    {
+        return _visibilityValue;
+    }
+
 }

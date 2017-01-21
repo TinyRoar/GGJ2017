@@ -11,6 +11,7 @@ public class Config : MonoSingleton<Config>
 
     [Header("Movement")]
     public float Speed = 5f; // in meters per Second
+    public float SpeedPlayer2 = 7f; // in meters per Second
     public float MovingVisibleSec = 1f;
     public float MovingVanishSec = 1f;
     public float CampVisibleSec = 2f;

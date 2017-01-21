@@ -122,6 +122,16 @@ public class Player : MonoBehaviour {
         }
     }
 
+    public float TryGetValueFromSkill<T>(float value)
+    {
+        foreach (var skill in SkillList)
+        {
+            if (skill is T)
+                return skill.GetValue(value);
+        }
+        return -1;
+    }
+
     private void DoControls()
     {
         GamePadState prevState = state;
