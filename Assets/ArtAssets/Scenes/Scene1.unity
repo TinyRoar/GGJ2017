@@ -4901,6 +4901,7 @@ GameObject:
   - component: {fileID: 922996034}
   - component: {fileID: 922996033}
   - component: {fileID: 922996032}
+  - component: {fileID: 922996035}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -5001,6 +5002,26 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 922996030}
+--- !u!114 &922996035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 922996030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba215e5d92167b14dad578dbca73bbbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseScrollRect: 0
+  MultipleClickable: 0
+  Sound: ButtonStandard
+  ExitGame: 1
+  Environment: 0
+  UseBlend: 0
+  Delay: 0
+  ActionList: []
+  Animations: []
 --- !u!1 &924200054
 GameObject:
   m_ObjectHideFlags: 0
@@ -6924,6 +6945,7 @@ MonoBehaviour:
   UseScrollRect: 0
   MultipleClickable: 0
   Sound: ButtonStandard
+  ExitGame: 0
   Environment: 2
   UseBlend: 0
   Delay: 1
@@ -7092,6 +7114,7 @@ MonoBehaviour:
   UseScrollRect: 0
   MultipleClickable: 0
   Sound: ButtonStandard
+  ExitGame: 0
   Environment: 2
   UseBlend: 0
   Delay: 1
@@ -7785,6 +7808,7 @@ MonoBehaviour:
   UseScrollRect: 0
   MultipleClickable: 0
   Sound: ButtonStandard
+  ExitGame: 0
   Environment: 2
   UseBlend: 0
   Delay: 1
@@ -8155,6 +8179,7 @@ MonoBehaviour:
   UseScrollRect: 0
   MultipleClickable: 0
   Sound: ButtonStandard
+  ExitGame: 0
   Environment: 1
   UseBlend: 0
   Delay: 1
@@ -10383,6 +10408,7 @@ MonoBehaviour:
   UseScrollRect: 0
   MultipleClickable: 0
   Sound: ButtonStandard
+  ExitGame: 0
   Environment: 1
   UseBlend: 0
   Delay: 1
