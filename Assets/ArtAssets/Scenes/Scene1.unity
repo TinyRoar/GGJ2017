@@ -881,7 +881,8 @@ MonoBehaviour:
   CampVisibleSec: 5
   DeepWaterMultiply: 0.4
   InvisibleSpeed: 0.8
-  TooLowDistanceIn1Sec: 2
+  CampDistance: 3
+  CampCheckInterval: 2
   DoVibration: 1
   VibrationDistance: 20
   StompRadius: 5
