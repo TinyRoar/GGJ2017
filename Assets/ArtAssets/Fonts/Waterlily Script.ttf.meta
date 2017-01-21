@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f59aa9b0e37e6e5449427cfc36f6039e
+timeCreated: 1485001729
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Waterlily
+  fontNames:
+  - Waterlily
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
