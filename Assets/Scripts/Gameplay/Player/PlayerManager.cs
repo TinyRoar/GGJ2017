@@ -28,7 +28,8 @@ public class PlayerManager : MonoSingleton<PlayerManager> {
 
         for (int i = 0; i < SpawnPoints.Count; i++)
         {
-            GameObject.Instantiate(PlayerPrefabs[i], SpawnPoints[i].position, Quaternion.identity);
+            GameObject temp = GameObject.Instantiate(PlayerPrefabs[i], SpawnPoints[i].position, Quaternion.identity);
+            temp.transform.parent = UIManager.Instance.GetEnvironment(GameEnvironment.Default);
         }
     }
 
