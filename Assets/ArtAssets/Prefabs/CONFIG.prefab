@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4635843069298104}
   - component: {fileID: 114822346326799646}
-  - component: {fileID: 114304247625410888}
+  - component: {fileID: 114684258744995616}
   m_Layer: 0
   m_Name: CONFIG
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114304247625410888
+--- !u!114 &114684258744995616
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -53,18 +53,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioList:
-  - {fileID: 8300000, guid: 50d1519cc36bfaf42a31b8a18743cbe3, type: 3}
-  - {fileID: 8300000, guid: 684bc12ac37cf164db7934ffdf94dd23, type: 3}
-  - {fileID: 8300000, guid: 3653ab47be60df242b27e4df25fa4e27, type: 3}
-  - {fileID: 8300000, guid: ab2218a081d79954a91a0f710feb8ec5, type: 3}
-  - {fileID: 8300000, guid: b45149adb762889409874023ed2cb3d7, type: 3}
-  - {fileID: 8300000, guid: b8e943e65848fe4488461e8f67655798, type: 3}
-  - {fileID: 8300000, guid: ca0b1591d02b8ec4ab9a15e5736ab53b, type: 3}
-  - {fileID: 8300000, guid: 856433cd20ceb7740ae390bd7ab93b66, type: 3}
-  - {fileID: 8300000, guid: 2354ff03422680040a2dcf3efa4b9f2c, type: 3}
-  - {fileID: 8300000, guid: 7d9f5e559c2a2d848808d0f29987a685, type: 3}
-  - {fileID: 8300000, guid: 586f616373259ee42a38b80d5283de92, type: 3}
-  - {fileID: 8300000, guid: efcd90a8e84bece4c8a4e2cdd0d0a032, type: 3}
+  - {fileID: 8300000, guid: 435d414bcd0bd5b4f9c48cc837bb413a, type: 3}
+  - {fileID: 8300000, guid: c1102977ef1cda2469367fea8d15756c, type: 3}
+  - {fileID: 8300000, guid: 7deadf1b89a2b3741ae669087a9769b1, type: 3}
+  - {fileID: 8300000, guid: 34edb9caf0334c146ac03bc4f39ed71b, type: 3}
+  - {fileID: 8300000, guid: 8c16b48e4489e0b4f8893d72a37610c5, type: 3}
+  - {fileID: 8300000, guid: 160376e482b327941b5eae4e5d59efe9, type: 3}
+  - {fileID: 8300000, guid: db958a27186ef8b41ac4e66275430370, type: 3}
+  - {fileID: 8300000, guid: 56e0d7ba8dd34df439921de6a8d41066, type: 3}
+  - {fileID: 8300000, guid: 5fc0d535d6ff1e9468183b52691fc7cf, type: 3}
+  - {fileID: 8300000, guid: 42eb4e2e515a8a54e84a15d1de6cf7cc, type: 3}
+  - {fileID: 8300000, guid: 9c826328bdd79b04898e80382c54c34e, type: 3}
+  - {fileID: 8300000, guid: c25cc5b24696f2643bcd07820be5b31d, type: 3}
   - {fileID: 8300000, guid: 63b89ea71fa3f6b4397212cad04bbca6, type: 3}
   - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
   - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
@@ -95,6 +95,7 @@ MonoBehaviour:
   StompCoolDown: 5
   SignalRadius: 5
   SignalCoolDown: 5
+  StepsVolume: 0.7
   BaseScreenSize:
     x: 1920
     y: 1080
