@@ -52,7 +52,7 @@ public class MatchManager : Singleton<MatchManager>
                 UIManager.Instance.Switch(Layer.End, UIAction.Show);
                 UIHandling.Instance.DoEndUI();
 
-                UIManager.Instance.Switch(GameEnvironment.Menu);
+                UIManager.Instance.Switch(GameEnvironment.End);
 
                 // TODO Disable or Destroy Players
                 PlayerManager.Instance.ResetPlayer();
