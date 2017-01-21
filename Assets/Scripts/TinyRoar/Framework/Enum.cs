@@ -5,6 +5,7 @@ public enum GameEnvironment
     Default,
     Menu,
     End,
+    Credits,
 }
 
 public enum Layer {
@@ -13,6 +14,7 @@ public enum Layer {
     InGame,
     Debug,
     End,
+    Credits,
 }
 
 public enum GameplayStatus
