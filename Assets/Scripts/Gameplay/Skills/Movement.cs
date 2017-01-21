@@ -55,12 +55,10 @@ public class Movement : Skill
         if (base.player.ModelTransform == null)
             return;
 
-        if (input == Vector3.zero)
-            return;
-
         base.player.ModelAnimator.SetFloat(speedHash, input.magnitude);
 
-        base.player.ModelTransform.localRotation = Quaternion.LookRotation(input, Vector3.up);
+        if (input != Vector3.zero)
+            base.player.ModelTransform.localRotation = Quaternion.LookRotation(input, Vector3.up);
     }
 
     public override void SetValue(float value)
