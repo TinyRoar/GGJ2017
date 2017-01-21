@@ -27,7 +27,7 @@ public class Stomp : Skill
 
         if(_cooldownTime >= Config.Instance.StompCoolDown)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (player.pressedA)
             {
                 _cooldownTime = 0;
                 DoStomp();

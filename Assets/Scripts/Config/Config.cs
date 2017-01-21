@@ -18,7 +18,8 @@ public class Config : MonoSingleton<Config>
 
     [Header("Invisibility")]
     public float InvisibleSpeed = 0.8f; // ab dieser geschwindigkeit (0 bis 1) wird man sichtbarer
-    public float TooLowDistanceIn1Sec = 2f;
+    public float CampDistance = 2f;
+    public float CampCheckInterval = 2f;
 
     [Header("Vibration")]
     public bool DoVibration = false;

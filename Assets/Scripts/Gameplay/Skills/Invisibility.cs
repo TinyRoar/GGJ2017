@@ -34,9 +34,9 @@ public class Invisibility : Skill
     {
         _antiCampTime += Time.deltaTime;
 
-        if (_antiCampTime >= 1)
+        if (_antiCampTime >= Config.Instance.CampCheckInterval)
         {
-            if (Vector3.Distance(_lastDistance, player.transform.position) < Config.Instance.TooLowDistanceIn1Sec)
+            if (Vector3.Distance(_lastDistance, player.transform.position) < Config.Instance.CampDistance)
             {
                 _campVisible = true;
             }
