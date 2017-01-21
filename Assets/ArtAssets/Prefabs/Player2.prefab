@@ -959,7 +959,7 @@ Animator:
   m_GameObject: {fileID: 1754846250471178}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3cabb5435581c2948847748cad04ff43, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 091132e8660829d4bb2356ff1b9a9bc4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -994,8 +994,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNumber: 2
-  ModelTransform: {fileID: 0}
-  ModelAnimator: {fileID: 0}
+  ModelTransform: {fileID: 4388456256903146}
+  ModelAnimator: {fileID: 95672658929808116}
   SkillTypeList: 010000000200000006000000
 --- !u!135 &135982630347719426
 SphereCollider:
