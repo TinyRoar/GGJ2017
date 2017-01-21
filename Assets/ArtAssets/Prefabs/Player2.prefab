@@ -980,8 +980,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaveParticlesPrefab: {fileID: 1829017604793012, guid: 2dbac82624009934fa51d109d9c87023,
     type: 2}
-  LeftFootTransform: {fileID: 0}
-  RightFootTransform: {fileID: 0}
+  LeftFootTransform: {fileID: 4082696113703336}
+  RightFootTransform: {fileID: 4983675631983596}
 --- !u!114 &114683552423972194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -994,8 +994,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNumber: 2
-  ModelTransform: {fileID: 4388456256903146}
-  ModelAnimator: {fileID: 95672658929808116}
+  ModelTransform: {fileID: 4648605685243664}
+  ModelAnimator: {fileID: 95448229406636004}
   SkillTypeList: 010000000200000006000000
 --- !u!135 &135982630347719426
 SphereCollider:
