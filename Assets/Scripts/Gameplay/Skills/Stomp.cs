@@ -26,7 +26,7 @@ public class Stomp : Skill
     {
         _cooldownTime += Time.deltaTime;
 
-        if(player.pressedA && _cooldownTime >= Config.Instance.StompCoolDown)
+        if((player.pressedA || Input.GetKeyDown(KeyCode.Space)) && _cooldownTime >= Config.Instance.StompCoolDown)
         {
             _cooldownTime = 0;
             DoStomp();
@@ -46,7 +46,7 @@ public class Stomp : Skill
                 // HAB DISCH
                 Events.GameplayStatus = GameplayStatus.MatchStop;
 
-                SoundManager.Instance.Play("LonoHey", SoundManager.SoundType.Soundeffect, false, 1);
+                SoundManager.Instance.Play("LonoHey", SoundManager.SoundType.Soundeffect, false, 0.5f);
 
             }
         }
