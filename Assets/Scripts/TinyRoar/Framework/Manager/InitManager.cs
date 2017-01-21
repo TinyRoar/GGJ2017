@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TinyRoar.Framework;
+using System.Threading;
 
 public class InitManager : MonoSingleton<InitManager>
 {
@@ -26,6 +27,9 @@ public class InitManager : MonoSingleton<InitManager>
 
     public bool CloseAtEsc = false;
 
+    public static Thread MainThread;
+
+
 
     public override void Awake()
     {
@@ -36,6 +40,8 @@ public class InitManager : MonoSingleton<InitManager>
         {
             GameConfig.Instance.UseSaveMethod = SaveMethod;
         }
+
+        MainThread = System.Threading.Thread.CurrentThread;
 
     }
 
