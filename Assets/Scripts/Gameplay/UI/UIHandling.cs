@@ -11,7 +11,6 @@ public class UIHandling : MonoSingleton<UIHandling> {
 
     public void DoEndUI()
     {
-        Debug.Log(_endTextOriginal);
         if (_endTextOriginal == null)
             _endTextOriginal = EndText.text;
 

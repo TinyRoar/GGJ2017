@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 54743259300496978}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 136776136420058778}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,6 +997,8 @@ MonoBehaviour:
     type: 2}
   LeftFootTransform: {fileID: 4194822713953402}
   RightFootTransform: {fileID: 4495020344343250}
+  menu: 0
+  addHeight: 0
 --- !u!135 &135370516671116024
 SphereCollider:
   m_ObjectHideFlags: 1

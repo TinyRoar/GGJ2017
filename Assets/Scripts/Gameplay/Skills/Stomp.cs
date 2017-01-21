@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TinyRoar.Framework;
 using UnityEngine;
 
 public class Stomp : Skill
@@ -44,6 +45,9 @@ public class Stomp : Skill
             {
                 // HAB DISCH
                 Events.GameplayStatus = GameplayStatus.MatchStop;
+
+                SoundManager.Instance.Play("LonoHey", SoundManager.SoundType.Soundeffect, false, 1);
+
             }
         }
 
