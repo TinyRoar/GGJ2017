@@ -170,6 +170,11 @@ namespace TinyRoar.Framework
             }
         }
 
+        public void Stop(AudioSource audioSource)
+        {
+            Destroy(audioSource.gameObject);
+        }
+
         // pause sounds, example: while playing ads
         internal void StopMusic()
         {

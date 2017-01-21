@@ -18,8 +18,9 @@ namespace TinyRoar.Framework
 
                 if (_instance == null)
                     _instance = FindObjectOfType<T>();
-
-                if (FindObjectsOfType<T>().Length > 1)
+                
+                bool isMainThread = InitManager.MainThread.Equals(System.Threading.Thread.CurrentThread);
+                if (isMainThread && FindObjectsOfType<T>().Length > 1)
                         Debug.LogError("There are more then one GameObjects with this script!!!");
 
                 if (_instance == null)
