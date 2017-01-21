@@ -32,6 +32,7 @@ ModelImporter:
     100048: mixamorig:Spine
     100050: mixamorig:Spine1
     100052: mixamorig:Spine2
+    100054: LakaMesh
     400000: Laka
     400002: //RootNode
     400004: mixamorig:Head
@@ -59,9 +60,12 @@ ModelImporter:
     400048: mixamorig:Spine
     400050: mixamorig:Spine1
     400052: mixamorig:Spine2
+    400054: LakaMesh
     4300000: Laka
+    4300002: LakaMesh
     9500000: //RootNode
     13700000: Laka
+    13700002: LakaMesh
   materials:
     importMaterials: 1
     materialName: 0
