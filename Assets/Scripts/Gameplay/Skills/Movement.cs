@@ -106,7 +106,7 @@ public class Movement : Skill
                 runOrStep = "Deep";
 
             //Debug.Log("play sound " + playerName + runOrStep + _soundId);
-            SoundManager.Instance.Play(playerName + runOrStep + _soundId, SoundManager.SoundType.Soundeffect, false, 1);
+            SoundManager.Instance.Play(playerName + runOrStep + _soundId, SoundManager.SoundType.Soundeffect, false, Config.Instance.StepsVolume);
 
             _soundId++;
             if (_soundId == 3)

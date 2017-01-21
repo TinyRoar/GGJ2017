@@ -33,6 +33,9 @@ public class Config : MonoSingleton<Config>
     public float SignalRadius = 5f;
     public float SignalCoolDown = 5f;
 
+    [Header("Sound")]
+    public float StepsVolume = 0.7f;
+
 
     // Framework
 
