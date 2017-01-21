@@ -2328,7 +2328,7 @@ ParticleSystem:
       minMaxState: 0
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 1
+    radiusScale: 0.2
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295
