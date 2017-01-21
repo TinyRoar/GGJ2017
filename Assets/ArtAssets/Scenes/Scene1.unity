@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44658017, g: 0.49641502, b: 0.57482153, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -842,7 +842,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e478a4072e99247947ae677baa289b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioList: []
+  AudioList:
+  - {fileID: 8300000, guid: 7deadf1b89a2b3741ae669087a9769b1, type: 3}
+  - {fileID: 8300000, guid: 34edb9caf0334c146ac03bc4f39ed71b, type: 3}
+  - {fileID: 8300000, guid: 8c16b48e4489e0b4f8893d72a37610c5, type: 3}
+  - {fileID: 8300000, guid: 160376e482b327941b5eae4e5d59efe9, type: 3}
+  - {fileID: 8300000, guid: db958a27186ef8b41ac4e66275430370, type: 3}
+  - {fileID: 8300000, guid: 56e0d7ba8dd34df439921de6a8d41066, type: 3}
+  - {fileID: 8300000, guid: 5fc0d535d6ff1e9468183b52691fc7cf, type: 3}
+  - {fileID: 8300000, guid: 42eb4e2e515a8a54e84a15d1de6cf7cc, type: 3}
+  - {fileID: 8300000, guid: 9c826328bdd79b04898e80382c54c34e, type: 3}
+  - {fileID: 8300000, guid: 1c9985154581ecb47b2bd8fce46006b6, type: 3}
+  - {fileID: 8300000, guid: c25cc5b24696f2643bcd07820be5b31d, type: 3}
+  - {fileID: 8300000, guid: 435d414bcd0bd5b4f9c48cc837bb413a, type: 3}
+  - {fileID: 8300000, guid: c1102977ef1cda2469367fea8d15756c, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   BgMusic: []
 --- !u!114 &1309298445
 MonoBehaviour:
@@ -855,15 +875,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 40
+  MovingVisibleSec: 1
+  MovingVanishSec: 1
+  CampVisibleSec: 2
+  InvisibleSpeed: 0.8
+  TooLowDistanceIn1Sec: 2
+  DoVibration: 1
+  VibrationDistance: 20
+  StompRadius: 5
+  StompCoolDown: 5
+  SignalRadius: 5
+  SignalCoolDown: 5
   BaseScreenSize:
     x: 1920
     y: 1080
-  VisibleSpeed: 0.8
-  VibrationDistance: 20
-  DoVibration: 0
-  StompRadius: 5
-  MovingCompleteVisibleAfterSeconds: 0.5
-  MovingCompleteInvisibleAfterSeconds: 0.5
 --- !u!1 &1353116515
 GameObject:
   m_ObjectHideFlags: 0
