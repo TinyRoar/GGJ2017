@@ -11,6 +11,9 @@ public class Player : MonoBehaviour {
     public bool Vibration = false;
     public Renderer Renderer;
 
+    public Transform ModelTransform;
+    public Animator ModelAnimator;
+
     public List<SkillType> SkillTypeList;
     public List<Skill> SkillList;
 
@@ -98,6 +101,9 @@ public class Player : MonoBehaviour {
 
     void OnDrawGizmos()
     {
+        if (Config.Instance == null)
+            return;
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, Config.Instance.StompRadius);
     }

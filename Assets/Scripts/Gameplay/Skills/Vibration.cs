@@ -29,7 +29,11 @@ public class Vibration : Skill
         
         // check distance between players 
         Player otherPlayer = player.GetOtherPlayer();
-        float distance = Vector3.Distance(player.transform.position, otherPlayer.transform.position);
+
+        float distance = 0;
+
+        if (otherPlayer != null)
+        distance = Vector3.Distance(player.transform.position, otherPlayer.transform.position);
 
         // do vibration
         if (distance < Config.Instance.VibrationDistance)

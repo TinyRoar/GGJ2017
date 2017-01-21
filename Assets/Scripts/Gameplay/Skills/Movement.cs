@@ -6,6 +6,8 @@ using UnityEngine;
 public class Movement : Skill
 {
     private bool _slowerMovementInDeepWater;
+    private Vector3 input = Vector3.zero;
+    private int speedHash = Animator.StringToHash("MovementSpeed");
 
     public override void Enable()
     {
@@ -22,16 +24,21 @@ public class Movement : Skill
 
     public override void DoUpdate()
     {
+        GetInput();
         Action();
+        Animation();
+    }
+
+    private void GetInput()
+    {
+        // get input
+        input = Vector3.zero;
+        input.x = Input.GetAxis(player.PlayerNumber.ToString() + "_Horizontal");
+        input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
     }
 
     private void Action()
     {
-        // get input
-        Vector3 input = Vector3.zero;
-        input.x = Input.GetAxis(player.PlayerNumber.ToString() + "_Horizontal");
-        input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
-
         // check deep water
         float multiply = 1;
         if (_slowerMovementInDeepWater)
@@ -40,6 +47,20 @@ public class Movement : Skill
         // move
         player.transform.Translate(input * Config.Instance.Speed * Time.deltaTime * multiply);
 
+    }
+
+    private void Animation()
+    {
+        // rotate char model to input direction
+        if (base.player.ModelTransform == null)
+            return;
+
+        if (input == Vector3.zero)
+            return;
+
+        base.player.ModelAnimator.SetFloat(speedHash, input.magnitude);
+
+        base.player.ModelTransform.localRotation = Quaternion.LookRotation(input, Vector3.up);
     }
 
     public override void SetValue(float value)
