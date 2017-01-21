@@ -106,6 +106,13 @@ public class UIManager : MonoSingleton<UIManager>
         if (_endTimerEnvironment != GameEnvironment.None)
             this.Show(_environmentList[_endTimerEnvironment]);
         ActiveEnvironment = _endTimerEnvironment;
+
+        // make sure to switch to active camera
+        foreach (Camera cam in Camera.allCameras)
+        {
+            //Debug.Log(cam);
+            GameObject.Find("UI").GetComponent<Canvas>().worldCamera = cam;
+        }
     }
 
     private bool _timerStarted = false;

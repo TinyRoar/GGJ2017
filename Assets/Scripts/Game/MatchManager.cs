@@ -13,7 +13,6 @@ public class MatchManager : Singleton<MatchManager>
 
     void GameplayStatusChange(GameplayStatus oldMatchStatus, GameplayStatus newMatchStatus)
     {
-
         switch (newMatchStatus)
         {
             case GameplayStatus.Menu:
@@ -43,12 +42,15 @@ public class MatchManager : Singleton<MatchManager>
                 UIManager.Instance.Switch(Layer.End, UIAction.Show);
                 UIHandling.Instance.DoEndUI();
 
+                UIManager.Instance.Switch(GameEnvironment.Menu);
+
                 // TODO Disable or Destroy Players
                 PlayerManager.Instance.ResetPlayer();
 
+
+
                 break;
         }
-
     }
 
 
