@@ -9,6 +9,8 @@ public class AnimationEvent : MonoBehaviour {
     public Transform LeftFootTransform;
     public Transform RightFootTransform;
 
+    public bool menu = false;
+
     private Vector3 spawnPos = Vector3.zero;
 
     public void LeftFoot ()
@@ -17,6 +19,9 @@ public class AnimationEvent : MonoBehaviour {
         spawnPos.y = 0;
 
         DoStep();
+
+        if (menu)
+            return;
 
         this.transform.parent.GetComponent<Player>().TrySetValueToSkill<Movement>(4);
 
@@ -29,28 +34,33 @@ public class AnimationEvent : MonoBehaviour {
 
         DoStep();
 
+        if (menu)
+            return;
+
         this.transform.parent.GetComponent<Player>().TrySetValueToSkill<Movement>(5);
 
     }
 
     private void DoStep()
     {
-
-        // if player 2 && visible >= 0.5
-        float invisibleVal = this.transform.parent.GetComponent<Player>().TryGetValueFromSkill<Invisibility>(0);
         bool stepAllowed = true;
-        if (invisibleVal != -1)
+
+        if (!menu)
         {
-            if (invisibleVal <= 0.5)
+            // if player 2 && visible >= 0.5
+            float invisibleVal = this.transform.parent.GetComponent<Player>().TryGetValueFromSkill<Invisibility>(0);
+
+            if (invisibleVal != -1)
             {
-                stepAllowed = false;
+                if (invisibleVal <= 0.5)
+                {
+                    stepAllowed = false;
+                }
             }
         }
 
         if (stepAllowed)
             Instantiate(WaveParticlesPrefab, spawnPos, Quaternion.identity);
-
-
     }
 
 }
