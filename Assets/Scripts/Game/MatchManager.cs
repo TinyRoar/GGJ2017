@@ -25,6 +25,7 @@ public class MatchManager : Singleton<MatchManager>
                 PlayerManager.Instance.SpawnPlayer();
 
                 break;
+
             case GameplayStatus.MatchStop:
 
                 // Stop Timer

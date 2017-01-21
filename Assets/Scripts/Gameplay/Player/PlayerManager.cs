@@ -18,7 +18,12 @@ public class PlayerManager : MonoSingleton<PlayerManager> {
     public void SpawnPlayer()
     {
         if (_spawned)
+        {
+            for (int i = 0; i < PlayerStorage.Count; i++)
+                PlayerStorage[i].Enable();
+
             return;
+        }
         _spawned = true;
 
         for (int i = 0; i < SpawnPoints.Count; i++)
@@ -33,6 +38,7 @@ public class PlayerManager : MonoSingleton<PlayerManager> {
         {
             PlayerStorage[i].transform.position = SpawnPoints[i].position;
             PlayerStorage[i].transform.rotation = Quaternion.identity;
+            PlayerStorage[i].Disable();
         }
     }
 
