@@ -943,7 +943,7 @@ MonoBehaviour:
   Invisible: 0
   Vibration: 1
   Renderer: {fileID: 0}
-  SkillTypeList: 01000000030000000400000006000000
+  SkillTypeList: 0100000003000000040000000500000007000000
 --- !u!135 &135370516671116024
 SphereCollider:
   m_ObjectHideFlags: 1

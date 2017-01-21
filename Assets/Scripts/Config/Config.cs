@@ -14,6 +14,7 @@ public class Config : MonoSingleton<Config>
     public float MovingVisibleSec = 1f;
     public float MovingVanishSec = 1f;
     public float CampVisibleSec = 2f;
+    public float DeepWaterMultiply = 0.4f;
 
     [Header("Invisibility")]
     public float InvisibleSpeed = 0.8f; // ab dieser geschwindigkeit (0 bis 1) wird man sichtbarer
@@ -26,6 +27,10 @@ public class Config : MonoSingleton<Config>
     [Header("Stomp")]
     public float StompRadius = 5f;
     public float StompCoolDown = 5f;
+
+    [Header("Signal")]
+    public float SignalRadius = 5f;
+    public float SignalCoolDown = 5f;
 
 
     // Framework

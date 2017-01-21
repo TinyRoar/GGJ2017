@@ -91,10 +91,24 @@ public class Player : MonoBehaviour {
         return PlayerIndex.One;
     }
 
+    public Player GetOtherPlayer()
+    {
+        return PlayerManager.Instance.GetPlayerWithNotNumber(this.PlayerNumber);
+    }
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, Config.Instance.StompRadius);
+    }
+
+    public void TrySetValueToSkill<T>(float value)
+    {
+        foreach (var skill in SkillList)
+        {
+            if (skill is T)
+                skill.SetValue(value);
+        }
     }
 
 }
