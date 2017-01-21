@@ -27,7 +27,7 @@ public class InitManager : MonoSingleton<InitManager>
 
     public bool CloseAtEsc = false;
 
-    public static Thread MainThread;
+    public static Thread MainThread = null;
 
 
 
