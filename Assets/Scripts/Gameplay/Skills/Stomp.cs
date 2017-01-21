@@ -44,6 +44,7 @@ public class Stomp : Skill
             if (item.CompareTag("Player") && item.transform.parent != player.transform)
             {
                 // HAB DISCH
+                MatchManager.Instance.MatchWin = true;
                 Events.GameplayStatus = GameplayStatus.MatchStop;
 
                 SoundManager.Instance.Play("LonoHey", SoundManager.SoundType.Soundeffect, false, 0.5f);

@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  SpeedPlayer2: 6
+  Speed: 4
+  SpeedPlayer2: 4
   MovingVisibleSec: 1
   MovingVanishSec: 1
   CampVisibleSec: 5
@@ -62,10 +62,10 @@ MonoBehaviour:
   CampDistance: 0.1
   CampCheckInterval: 1
   DoVibration: 1
-  VibrationDistance: 3
-  StompRadius: 1
+  VibrationDistance: 8
+  StompRadius: 1.5
   StompCoolDown: 3
-  SignalRadius: 20
+  SignalRadius: 15
   SignalCoolDown: 3
   StepsVolume: 0.7
   BaseScreenSize:

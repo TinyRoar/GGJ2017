@@ -37,6 +37,9 @@ public class Config : MonoSingleton<Config>
     [Header("Sound")]
     public float StepsVolume = 0.7f;
 
+    [Header("Gameplay")]
+    public float Timer = 90f;
+
 
     // Framework
 

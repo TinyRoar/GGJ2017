@@ -6,6 +6,8 @@ public class MatchManager : Singleton<MatchManager>
 {
     private AudioSource _ingameAudio;
 
+    public bool MatchWin = false;
+
     public void Init()
     {
         Events.Instance.OnGameplayStatusChange += GameplayStatusChange;
@@ -35,6 +37,11 @@ public class MatchManager : Singleton<MatchManager>
 
                 // Stop Timer
                 GameplayTimer.Instance.Disable();
+
+                if(MatchWin)
+                {
+                    // TODO show/hide
+                }
 
                 // UI
                 UIManager.Instance.Switch(Layer.InGame, UIAction.Hide);

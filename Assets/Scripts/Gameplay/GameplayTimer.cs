@@ -16,7 +16,7 @@ public class GameplayTimer : MonoSingleton<GameplayTimer> {
 
     public void Enable()
     {
-        _time = 0;
+        _time = Config.Instance.Timer;
         Updater.Instance.OnUpdate -= DoUpdate;
         Updater.Instance.OnUpdate += DoUpdate;
     }
@@ -35,8 +35,17 @@ public class GameplayTimer : MonoSingleton<GameplayTimer> {
 
     void DoUpdate()
     {
-        _time += Time.deltaTime;
-        Text.text = (_time).ToString("n2");
+        _time -= Time.deltaTime;
+        if (_time <= 0)
+            _time = 0;
+        Text.text = (_time).ToString("n2").Replace('.', ':');
+
+        if(_time == 0)
+        {
+            MatchManager.Instance.MatchWin = false;
+            Events.GameplayStatus = GameplayStatus.MatchStop;
+        }
+
     }
 
     public float GetTime()
