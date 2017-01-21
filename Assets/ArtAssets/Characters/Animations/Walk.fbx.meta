@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e9ce8f33dad4db645bde90c642f6e3e5
-timeCreated: 1484996581
+guid: 721ab20e540998348aea0425d790fdfe
+timeCreated: 1484997497
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -57,7 +57,7 @@ ModelImporter:
     400046: mixamorig:Spine1
     400048: mixamorig:Spine2
     400050: //RootNode
-    7400000: Sneak
+    7400000: Walk
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -81,10 +81,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Sneak
+      name: Walk
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 110
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
