@@ -151,4 +151,9 @@ public class Player : MonoBehaviour {
 
     }
 
+    public GamePadState GetGamePadState()
+    {
+        return state;
+    }
+
 }

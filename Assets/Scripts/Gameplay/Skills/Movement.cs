@@ -38,8 +38,11 @@ public class Movement : Skill
     {
         // get input
         input = Vector3.zero;
-        input.x = Input.GetAxis(player.PlayerNumber.ToString() + "_Horizontal");
-        input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
+        input.x = base.player.GetGamePadState().ThumbSticks.Left.X;
+        input.z = base.player.GetGamePadState().ThumbSticks.Left.Y;
+
+        //input.x = Input.GetAxis(player.PlayerNumber.ToString() + "_Horizontal");
+        //input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
     }
 
     private void Action()
