@@ -57,11 +57,11 @@ public class Invisibility : Skill
         input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
 
         // enable / disable visibility
-        if (!_curVisible && input.magnitude > Config.Instance.VisibleSpeed)
+        if (!_curVisible && input.magnitude > Config.Instance.InvisibleSpeed)
         {
             _curVisible = true;
         }
-        else if (_curVisible && input.magnitude < Config.Instance.VisibleSpeed)
+        else if (_curVisible && input.magnitude < Config.Instance.InvisibleSpeed)
         {
             _curVisible = false;
         }
@@ -69,13 +69,13 @@ public class Invisibility : Skill
         // smooth increase / decrease of move visibility
         if (_curVisible)
         {
-            _visibilityValue += Time.deltaTime / Config.Instance.MovingCompleteVisibleAfterSeconds;
+            _visibilityValue += Time.deltaTime / Config.Instance.MovingVisibleSec;
             if (_visibilityValue >= 1)
                 _visibilityValue = 1;
         }
         else if (!_campVisible)
         {
-            _visibilityValue -= Time.deltaTime / Config.Instance.MovingCompleteInvisibleAfterSeconds;
+            _visibilityValue -= Time.deltaTime / Config.Instance.MovingVanishSec;
             if (_visibilityValue < 0)
                 _visibilityValue = 0;
         }
@@ -83,7 +83,7 @@ public class Invisibility : Skill
         // camp visibility
         if (_campVisible)
         {
-            _visibilityValue += Time.deltaTime / Config.Instance.CampCompleteVisibleAfterSeconds;
+            _visibilityValue += Time.deltaTime / Config.Instance.CampVisibleSec;
             if (_visibilityValue >= 1)
                 _visibilityValue = 1;
         }
@@ -92,7 +92,7 @@ public class Invisibility : Skill
         if (_visibilityValue > 0)
         {
             player.Renderer.enabled = true;
-            Debug.Log("Visible: " + _visibilityValue);
+            //Debug.Log("Visible: " + _visibilityValue);
         }
         else
         {

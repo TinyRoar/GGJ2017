@@ -31,7 +31,7 @@ public class Movement : Skill
         input.z = Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
 
         // move
-        player.transform.Translate(input * Config.Instance.VisibleSpeed * Time.deltaTime);
+        player.transform.Translate(input * Config.Instance.Speed * Time.deltaTime);
 
     }
 }

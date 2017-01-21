@@ -855,17 +855,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 40
+  MovingVisibleSec: 1
+  MovingVanishSec: 1
+  CampVisibleSec: 2
+  InvisibleSpeed: 0.8
+  TooLowDistanceIn1Sec: 2
+  DoVibration: 1
+  VibrationDistance: 20
+  StompRadius: 5
+  StompCoolDown: 5
   BaseScreenSize:
     x: 1920
     y: 1080
-  VisibleSpeed: 0.8
-  VibrationDistance: 20
-  DoVibration: 0
-  StompRadius: 5
-  MovingCompleteVisibleAfterSeconds: 0.5
-  MovingCompleteInvisibleAfterSeconds: 0.5
-  CampCompleteVisibleAfterSeconds: 2
-  TooLowDistanceIn1Sec: 2
 --- !u!1 &1353116515
 GameObject:
   m_ObjectHideFlags: 0
