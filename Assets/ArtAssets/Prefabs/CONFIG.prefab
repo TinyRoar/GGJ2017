@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  SpeedPlayer2: 7
+  Speed: 3
+  SpeedPlayer2: 6
   MovingVisibleSec: 1
   MovingVanishSec: 1
   CampVisibleSec: 5
@@ -62,11 +62,11 @@ MonoBehaviour:
   CampDistance: 0.1
   CampCheckInterval: 1
   DoVibration: 1
-  VibrationDistance: 5
-  StompRadius: 5
-  StompCoolDown: 5
-  SignalRadius: 5
-  SignalCoolDown: 5
+  VibrationDistance: 3
+  StompRadius: 1
+  StompCoolDown: 3
+  SignalRadius: 20
+  SignalCoolDown: 3
   StepsVolume: 0.7
   BaseScreenSize:
     x: 1920
@@ -99,5 +99,5 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
   - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
   - {fileID: 8300000, guid: 056357fa0b1ebd84aa35f21dbc5eb2bf, type: 3}
-  - {fileID: 8300000, guid: aae6aaa398682774b880e7b14260664e, type: 3}
+  - {fileID: 0}
   BgMusic: []

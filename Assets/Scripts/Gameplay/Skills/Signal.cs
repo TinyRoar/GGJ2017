@@ -25,7 +25,7 @@ public class Signal : Skill
     {
         _cooldownTime += Time.deltaTime;
 
-        if (player.pressedB && _cooldownTime >= Config.Instance.SignalCoolDown)
+        if (player.pressedA && _cooldownTime >= Config.Instance.SignalCoolDown)
         {
             _cooldownTime = 0;
 
@@ -34,8 +34,15 @@ public class Signal : Skill
 
             // play sound 2
             Player otherPlayer = player.GetOtherPlayer();
-            float volume = Vector3.Distance(player.transform.position, otherPlayer.transform.position) / Config.Instance.SignalRadius;
-            SoundManager.Instance.Play("LakaLaughter" + UnityEngine.Random.Range(1, 2), SoundManager.SoundType.Soundeffect, false, volume, 2f);
+            float distance = Vector3.Distance(player.transform.position, otherPlayer.transform.position);
+            //Debug.Log(distance);
+            if (distance > Config.Instance.SignalRadius)
+                return;
+
+            float volume = 1 - distance / Config.Instance.SignalRadius;
+            //Debug.Log(volume);
+            float delay = 1;
+            SoundManager.Instance.Play("LakaLaughter" + UnityEngine.Random.Range(1, 2), SoundManager.SoundType.Soundeffect, false, volume, delay);
 
         }
 
