@@ -17,6 +17,8 @@ public class AnimationEvent : MonoBehaviour {
         spawnPos.y = 0;
 
         Instantiate(WaveParticlesPrefab, spawnPos, Quaternion.identity);
+
+        this.transform.parent.GetComponent<Player>().TrySetValueToSkill<Movement>(2);
 	}
 
     public void RightFoot()
@@ -25,5 +27,8 @@ public class AnimationEvent : MonoBehaviour {
         spawnPos.y = 0;
 
         Instantiate(WaveParticlesPrefab, spawnPos, Quaternion.identity);
+
+        this.transform.parent.GetComponent<Player>().TrySetValueToSkill<Movement>(3);
+
     }
 }

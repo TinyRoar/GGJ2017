@@ -10,6 +10,21 @@ public class Invisibility : Skill
     private Vector3 _lastDistance;
     private float _antiCampTime;
     private bool _campVisible = false;
+    private Material _material;
+
+    public override void SetPlayer(Player player)
+    {
+        base.SetPlayer(player);
+
+        Material[] materials = player.transform.Find("Laka/unamed").GetComponent<SkinnedMeshRenderer>().materials;
+        foreach (var material in materials)
+        {
+            if (material.name == "MatLaka (Instance)")
+            {
+                _material = material;
+            }
+        }
+    }
 
     public override void Enable()
     {
@@ -88,16 +103,10 @@ public class Invisibility : Skill
                 _visibilityValue = 1;
         }
 
-        // TODO do this to a texture or whatever..
-        if (_visibilityValue > 0)
-        {
-            player.Renderer.enabled = true;
-            //Debug.Log("Visible: " + _visibilityValue);
-        }
-        else
-        {
-            player.Renderer.enabled = false;
-        }
+        // update visibility
+        Color color = _material.color;
+        color.a = _visibilityValue;
+        _material.color = color;
 
     }
 
