@@ -13,8 +13,9 @@ public enum Layer {
     MainMenu,
     InGame,
     Debug,
-    End,
+    LakaWin,
     Credits,
+    LonoWin,
 }
 
 public enum GameplayStatus
