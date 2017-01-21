@@ -7,12 +7,14 @@ using XInputDotNetPure;
 public class Player : MonoBehaviour {
 
     public PlayerNumber PlayerNumber;
-    public bool Invisible = false;
-    public bool Vibration = false;
     public Renderer Renderer;
-
     public List<SkillType> SkillTypeList;
     public List<Skill> SkillList;
+
+    private GamePadState state;
+    private GamePadState prevState;
+    public bool pressedA { get; private set; }
+    public bool pressedB { get; private set; }
 
     void Start ()
     {
@@ -41,6 +43,8 @@ public class Player : MonoBehaviour {
 
     public void Enable()
     {
+        pressedA = false;
+        pressedB = false;
 
         Updater.Instance.OnUpdate -= DoUpdate;
         Updater.Instance.OnUpdate += DoUpdate;
@@ -109,6 +113,24 @@ public class Player : MonoBehaviour {
             if (skill is T)
                 skill.SetValue(value);
         }
+    }
+
+    private void DoControls()
+    {
+        prevState = state;
+        state = GamePad.GetState(GetPlayerIndex());
+
+        // Detect if a button was pressed/release this frame
+        if (prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed)
+            pressedA = true;
+        if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)
+            pressedA = false;
+
+        // Detect if a button was pressed/release this frame
+        if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed)
+            pressedB = true;
+        if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
+            pressedB = false;
     }
 
 }
