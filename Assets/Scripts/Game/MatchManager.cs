@@ -43,13 +43,16 @@ public class MatchManager : Singleton<MatchManager>
 
                 if(MatchWin)
                 {
-                    // TODO show/hide
+                    UIManager.Instance.Switch(Layer.LonoWin, UIAction.Show);
+                }
+                else
+                {
+                    UIManager.Instance.Switch(Layer.LakaWin, UIAction.Show);
                 }
 
                 // UI
                 UIManager.Instance.Switch(Layer.InGame, UIAction.Hide);
                 UIManager.Instance.Switch(Layer.MainMenu, UIAction.Show);
-              //  UIManager.Instance.Switch(Layer.End, UIAction.Show);
                 UIHandling.Instance.DoEndUI();
 
                 UIManager.Instance.Switch(GameEnvironment.End);

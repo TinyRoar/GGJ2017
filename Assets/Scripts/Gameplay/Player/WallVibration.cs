@@ -13,8 +13,24 @@ public class WallVibration : MonoBehaviour {
         if (_player == null)
             _player = this.transform.parent.GetComponent<Player>();
 
-        float vibrationValue = 0.1f;
+        float vibrationValue = 0.5f;
         GamePad.SetVibration(_player.GetPlayerIndex(), vibrationValue, vibrationValue);
+
+        Timer.Instance.Add(0.3f, delegate
+        {
+            StopVibration();
+        });
+
+    }
+
+    void OnDestroy()
+    {
+        StopVibration();
+    }
+
+    private void StopVibration()
+    {
+        GamePad.SetVibration(_player.GetPlayerIndex(), 0, 0);
 
     }
 
