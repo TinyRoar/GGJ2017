@@ -371,6 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4388456256903146}
   - component: {fileID: 95672658929808116}
+  - component: {fileID: 114662273956949644}
   m_Layer: 0
   m_Name: Laka
   m_TagString: Untagged
@@ -928,6 +929,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114662273956949644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754846250471178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a603462ef833e0046b2d51ff271f43c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaveParticlesPrefab: {fileID: 1829017604793012, guid: 2dbac82624009934fa51d109d9c87023,
+    type: 2}
+  LeftFootTransform: {fileID: 4843869689642932}
+  RightFootTransform: {fileID: 4969758247059462}
 --- !u!114 &114683552423972194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -940,7 +956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNumber: 2
-  Renderer: {fileID: 23657482038764968}
   ModelTransform: {fileID: 0}
   ModelAnimator: {fileID: 0}
   SkillTypeList: 010000000200000006000000

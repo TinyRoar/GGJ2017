@@ -7,7 +7,6 @@ using XInputDotNetPure;
 public class Player : MonoBehaviour {
 
     public PlayerNumber PlayerNumber;
-    public Renderer Renderer;
 
     public Transform ModelTransform;
     public Animator ModelAnimator;
