@@ -1,70 +1,67 @@
 fileFormatVersion: 2
-guid: 3cabb5435581c2948847748cad04ff43
-timeCreated: 1484995728
+guid: f7c7368861c56374282d7d8aba596333
+timeCreated: 1485018538
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: mixamorig:Head
-    100004: mixamorig:HeadTop_End
-    100006: mixamorig:Hips
-    100008: mixamorig:LeftArm
-    100010: mixamorig:LeftFoot
-    100012: mixamorig:LeftForeArm
-    100014: mixamorig:LeftHand
-    100016: mixamorig:LeftLeg
-    100018: mixamorig:LeftShoulder
-    100020: mixamorig:LeftToe_End
-    100022: mixamorig:LeftToeBase
-    100024: mixamorig:LeftUpLeg
-    100026: mixamorig:Neck
-    100028: mixamorig:RightArm
-    100030: mixamorig:RightFoot
-    100032: mixamorig:RightForeArm
-    100034: mixamorig:RightHand
-    100036: mixamorig:RightLeg
-    100038: mixamorig:RightShoulder
-    100040: mixamorig:RightToe_End
-    100042: mixamorig:RightToeBase
-    100044: mixamorig:RightUpLeg
-    100046: mixamorig:Spine
-    100048: mixamorig:Spine1
-    100050: mixamorig:Spine2
-    100052: unamed
-    400000: //RootNode
-    400002: mixamorig:Head
-    400004: mixamorig:HeadTop_End
-    400006: mixamorig:Hips
-    400008: mixamorig:LeftArm
-    400010: mixamorig:LeftFoot
-    400012: mixamorig:LeftForeArm
-    400014: mixamorig:LeftHand
-    400016: mixamorig:LeftLeg
-    400018: mixamorig:LeftShoulder
-    400020: mixamorig:LeftToe_End
-    400022: mixamorig:LeftToeBase
-    400024: mixamorig:LeftUpLeg
-    400026: mixamorig:Neck
-    400028: mixamorig:RightArm
-    400030: mixamorig:RightFoot
-    400032: mixamorig:RightForeArm
-    400034: mixamorig:RightHand
-    400036: mixamorig:RightLeg
-    400038: mixamorig:RightShoulder
-    400040: mixamorig:RightToe_End
-    400042: mixamorig:RightToeBase
-    400044: mixamorig:RightUpLeg
-    400046: mixamorig:Spine
-    400048: mixamorig:Spine1
-    400050: mixamorig:Spine2
-    400052: unamed
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: unamed
-    4300002: Laka
+    100000: Laka
+    100002: //RootNode
+    100004: mixamorig:Head
+    100006: mixamorig:HeadTop_End
+    100008: mixamorig:Hips
+    100010: mixamorig:LeftArm
+    100012: mixamorig:LeftFoot
+    100014: mixamorig:LeftForeArm
+    100016: mixamorig:LeftHand
+    100018: mixamorig:LeftLeg
+    100020: mixamorig:LeftShoulder
+    100022: mixamorig:LeftToe_End
+    100024: mixamorig:LeftToeBase
+    100026: mixamorig:LeftUpLeg
+    100028: mixamorig:Neck
+    100030: mixamorig:RightArm
+    100032: mixamorig:RightFoot
+    100034: mixamorig:RightForeArm
+    100036: mixamorig:RightHand
+    100038: mixamorig:RightLeg
+    100040: mixamorig:RightShoulder
+    100042: mixamorig:RightToe_End
+    100044: mixamorig:RightToeBase
+    100046: mixamorig:RightUpLeg
+    100048: mixamorig:Spine
+    100050: mixamorig:Spine1
+    100052: mixamorig:Spine2
+    400000: Laka
+    400002: //RootNode
+    400004: mixamorig:Head
+    400006: mixamorig:HeadTop_End
+    400008: mixamorig:Hips
+    400010: mixamorig:LeftArm
+    400012: mixamorig:LeftFoot
+    400014: mixamorig:LeftForeArm
+    400016: mixamorig:LeftHand
+    400018: mixamorig:LeftLeg
+    400020: mixamorig:LeftShoulder
+    400022: mixamorig:LeftToe_End
+    400024: mixamorig:LeftToeBase
+    400026: mixamorig:LeftUpLeg
+    400028: mixamorig:Neck
+    400030: mixamorig:RightArm
+    400032: mixamorig:RightFoot
+    400034: mixamorig:RightForeArm
+    400036: mixamorig:RightHand
+    400038: mixamorig:RightLeg
+    400040: mixamorig:RightShoulder
+    400042: mixamorig:RightToe_End
+    400044: mixamorig:RightToeBase
+    400046: mixamorig:RightUpLeg
+    400048: mixamorig:Spine
+    400050: mixamorig:Spine1
+    400052: mixamorig:Spine2
+    4300000: Laka
     9500000: //RootNode
-    13700000: unamed
+    13700000: Laka
   materials:
     importMaterials: 1
     materialName: 0
