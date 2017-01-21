@@ -19,6 +19,9 @@ namespace TinyRoar.Framework
                 if (_instance == null)
                     _instance = FindObjectOfType<T>();
 
+                if (FindObjectsOfType<T>().Length > 1)
+                        Debug.LogError("There are more then one GameObjects with this script!!!");
+
                 if (_instance == null)
                 {
                     GameObject singleton = new GameObject();
