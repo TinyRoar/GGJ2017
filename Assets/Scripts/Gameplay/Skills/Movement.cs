@@ -12,6 +12,8 @@ public class Movement : Skill
     private int speedHash = Animator.StringToHash("MovementSpeed");
     private int _soundId = 1;
     private float _visibilityValue;
+    private float speed = 0;
+    private float motion = 0;
 
     public override void Enable()
     {
@@ -53,12 +55,13 @@ public class Movement : Skill
             multiply = Config.Instance.DeepWaterMultiply;
 
         // move
-        float speed = Config.Instance.Speed;
+        speed = Config.Instance.Speed;
         if(player.PlayerNumber == PlayerNumber.Player2)
             speed = Config.Instance.SpeedPlayer2;
 
         player.transform.Translate(input * speed * Time.deltaTime * multiply);
 
+        motion = input.magnitude * speed * multiply;
     }
 
     private void Animation()
@@ -67,7 +70,7 @@ public class Movement : Skill
         if (base.player.ModelTransform == null)
             return;
 
-        base.player.ModelAnimator.SetFloat(speedHash, input.magnitude);
+        base.player.ModelAnimator.SetFloat(speedHash, motion);
 
         if (input != Vector3.zero)
             base.player.ModelTransform.localRotation = Quaternion.LookRotation(input, Vector3.up);
