@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 
     public Transform ModelTransform;
     public Animator ModelAnimator;
+    public GameObject WhistleParticlePrefab;
 
     public List<SkillType> SkillTypeList;
     public List<Skill> SkillList;

@@ -981,6 +981,8 @@ MonoBehaviour:
   PlayerNumber: 1
   ModelTransform: {fileID: 4618164447303948}
   ModelAnimator: {fileID: 95613993313474836}
+  WhistleParticlePrefab: {fileID: 1829017604793012, guid: f781458dfff4e8940be45c4d99c65d75,
+    type: 2}
   SkillTypeList: 0100000003000000040000000500000007000000
 --- !u!114 &114919694346049602
 MonoBehaviour:
