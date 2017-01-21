@@ -53,18 +53,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioList:
-  - {fileID: 8300000, guid: be6c7c6ea8d12aa458822174fabacdf1, type: 3}
-  - {fileID: 8300000, guid: 72e6b79d92c537c4ab41805a5d3eda0c, type: 3}
-  - {fileID: 8300000, guid: 8f6d873230f0f00488e3a213c7e14394, type: 3}
-  - {fileID: 8300000, guid: 9a7e86a5b6f2e3743b64eaf834781075, type: 3}
-  - {fileID: 8300000, guid: dcb1952cca8394344b63a4695278ec7b, type: 3}
-  - {fileID: 8300000, guid: 71c859e3ea048604483f819cd707a8a7, type: 3}
-  - {fileID: 8300000, guid: 5589da59d307dc243b064155e9f0d0f5, type: 3}
-  - {fileID: 8300000, guid: 63b591035edb6614ab8ff10bacd668e7, type: 3}
-  - {fileID: 8300000, guid: bb28ce1938a7b54449e1bdd36417ee08, type: 3}
-  - {fileID: 8300000, guid: 831298b2328501d45be8fd29d8b60d3b, type: 3}
-  - {fileID: 8300000, guid: 07cac364bb5cb1944ae4d3dcc566ea5c, type: 3}
-  - {fileID: 8300000, guid: 8fbdc916a57182a40a80483044adfbf1, type: 3}
+  - {fileID: 8300000, guid: 50d1519cc36bfaf42a31b8a18743cbe3, type: 3}
+  - {fileID: 8300000, guid: 684bc12ac37cf164db7934ffdf94dd23, type: 3}
+  - {fileID: 8300000, guid: 3653ab47be60df242b27e4df25fa4e27, type: 3}
+  - {fileID: 8300000, guid: ab2218a081d79954a91a0f710feb8ec5, type: 3}
+  - {fileID: 8300000, guid: b45149adb762889409874023ed2cb3d7, type: 3}
+  - {fileID: 8300000, guid: b8e943e65848fe4488461e8f67655798, type: 3}
+  - {fileID: 8300000, guid: ca0b1591d02b8ec4ab9a15e5736ab53b, type: 3}
+  - {fileID: 8300000, guid: 856433cd20ceb7740ae390bd7ab93b66, type: 3}
+  - {fileID: 8300000, guid: 2354ff03422680040a2dcf3efa4b9f2c, type: 3}
+  - {fileID: 8300000, guid: 7d9f5e559c2a2d848808d0f29987a685, type: 3}
+  - {fileID: 8300000, guid: 586f616373259ee42a38b80d5283de92, type: 3}
+  - {fileID: 8300000, guid: efcd90a8e84bece4c8a4e2cdd0d0a032, type: 3}
   - {fileID: 8300000, guid: 63b89ea71fa3f6b4397212cad04bbca6, type: 3}
   - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
   - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
@@ -88,9 +88,9 @@ MonoBehaviour:
   DeepWaterMultiply: 0.4
   InvisibleSpeed: 0.8
   CampDistance: 3
-  CampCheckInterval: 2
+  CampCheckInterval: 0.5
   DoVibration: 1
-  VibrationDistance: 20
+  VibrationDistance: 5
   StompRadius: 5
   StompCoolDown: 5
   SignalRadius: 5
