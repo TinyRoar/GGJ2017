@@ -4,6 +4,7 @@ public enum GameEnvironment
     None,
     Default,
     Menu,
+    End,
 }
 
 public enum Layer {
