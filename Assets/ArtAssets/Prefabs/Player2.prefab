@@ -998,6 +998,8 @@ MonoBehaviour:
   PlayerNumber: 2
   ModelTransform: {fileID: 4185987596992036}
   ModelAnimator: {fileID: 95085876755709346}
+  WhistleParticlePrefab: {fileID: 1829017604793012, guid: f781458dfff4e8940be45c4d99c65d75,
+    type: 2}
   SkillTypeList: 010000000200000006000000
 --- !u!135 &135982630347719426
 SphereCollider:
