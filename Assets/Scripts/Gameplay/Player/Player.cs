@@ -91,6 +91,11 @@ public class Player : MonoBehaviour {
         return PlayerIndex.One;
     }
 
+    public Player GetOtherPlayer()
+    {
+        return PlayerManager.Instance.GetPlayerWithNotNumber(this.PlayerNumber);
+    }
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

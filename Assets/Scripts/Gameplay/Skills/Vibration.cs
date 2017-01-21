@@ -24,7 +24,7 @@ public class Vibration : Skill
     public override void DoUpdate()
     {
         // check distance between players 
-        Player otherPlayer = PlayerManager.Instance.GetPlayerWithNotNumber(player.PlayerNumber);
+        Player otherPlayer = player.GetOtherPlayer();
         float distance = Vector3.Distance(player.transform.position, otherPlayer.transform.position);
 
         // do vibration

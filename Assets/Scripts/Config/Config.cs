@@ -27,6 +27,10 @@ public class Config : MonoSingleton<Config>
     public float StompRadius = 5f;
     public float StompCoolDown = 5f;
 
+    [Header("Signal")]
+    public float SignalRadius = 5f;
+    public float SignalCoolDown = 5f;
+
 
     // Framework
 
