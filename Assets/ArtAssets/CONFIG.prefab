@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1400146130923548}
+  m_IsPrefabParent: 1
+--- !u!1 &1400146130923548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4899666526902734}
+  - component: {fileID: 114622274583163006}
+  - component: {fileID: 114407311857775900}
+  m_Layer: 0
+  m_Name: CONFIG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4899666526902734
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1400146130923548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.330423, y: 21.822037, z: -2.375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114407311857775900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1400146130923548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e478a4072e99247947ae677baa289b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioList:
+  - {fileID: 8300000, guid: 7deadf1b89a2b3741ae669087a9769b1, type: 3}
+  - {fileID: 8300000, guid: 34edb9caf0334c146ac03bc4f39ed71b, type: 3}
+  - {fileID: 8300000, guid: 8c16b48e4489e0b4f8893d72a37610c5, type: 3}
+  - {fileID: 8300000, guid: 160376e482b327941b5eae4e5d59efe9, type: 3}
+  - {fileID: 8300000, guid: db958a27186ef8b41ac4e66275430370, type: 3}
+  - {fileID: 8300000, guid: 56e0d7ba8dd34df439921de6a8d41066, type: 3}
+  - {fileID: 8300000, guid: 5fc0d535d6ff1e9468183b52691fc7cf, type: 3}
+  - {fileID: 8300000, guid: 42eb4e2e515a8a54e84a15d1de6cf7cc, type: 3}
+  - {fileID: 8300000, guid: 9c826328bdd79b04898e80382c54c34e, type: 3}
+  - {fileID: 8300000, guid: 1c9985154581ecb47b2bd8fce46006b6, type: 3}
+  - {fileID: 8300000, guid: c25cc5b24696f2643bcd07820be5b31d, type: 3}
+  - {fileID: 8300000, guid: 435d414bcd0bd5b4f9c48cc837bb413a, type: 3}
+  - {fileID: 8300000, guid: 056357fa0b1ebd84aa35f21dbc5eb2bf, type: 3}
+  - {fileID: 8300000, guid: 3312fee221742d449ad2301c178b0698, type: 3}
+  - {fileID: 8300000, guid: 24d2ec7a0d484494abb56b50bc728bed, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  BgMusic: []
+--- !u!114 &114622274583163006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1400146130923548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c674262276bfcd440b9afc92a9832036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 40
+  MovingVisibleSec: 1
+  MovingVanishSec: 1
+  CampVisibleSec: 5
+  DeepWaterMultiply: 0.4
+  InvisibleSpeed: 0.8
+  CampDistance: 3
+  CampCheckInterval: 2
+  DoVibration: 1
+  VibrationDistance: 20
+  StompRadius: 5
+  StompCoolDown: 5
+  SignalRadius: 5
+  SignalCoolDown: 5
+  BaseScreenSize:
+    x: 1920
+    y: 1080
