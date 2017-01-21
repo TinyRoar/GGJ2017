@@ -445,9 +445,9 @@ Canvas:
   m_GameObject: {fileID: 398230075}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 442460570}
+  m_PlaneDistance: 64.37
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 1165310061}
   - component: {fileID: 1165310060}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -922,7 +922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -169}
+  m_AnchoredPosition: {x: 0, y: -198}
   m_SizeDelta: {x: 592, y: 111}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1165310060
