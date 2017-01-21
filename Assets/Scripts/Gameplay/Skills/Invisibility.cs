@@ -16,7 +16,7 @@ public class Invisibility : Skill
     {
         base.SetPlayer(player);
 
-        Material[] materials = player.transform.Find("Laka/unamed").GetComponent<SkinnedMeshRenderer>().materials;
+        Material[] materials = player.transform.Find("Laka/Laka").GetComponent<SkinnedMeshRenderer>().materials;
         foreach (var material in materials)
         {
             if (material.name == "MatLaka (Instance)")
