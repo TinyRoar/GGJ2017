@@ -11,6 +11,7 @@ public class Invisibility : Skill
     private float _antiCampTime;
     private bool _campVisible = false;
     private Material _material;
+    private bool _isKeyboardSneak = false;
 
     public override void SetPlayer(Player player)
     {
@@ -72,15 +73,20 @@ public class Invisibility : Skill
         input.z = base.player.GetGamePadState().ThumbSticks.Left.Y + Input.GetAxis(player.PlayerNumber.ToString() + "_Vertical");
 
         // enable / disable visibility
-        if (!_curVisible && input.magnitude > Config.Instance.InvisibleSpeed)
-        {
-            _curVisible = true;
-            player.TrySetValueToSkill<Movement>(2);
-        }
-        else if (_curVisible && input.magnitude < Config.Instance.InvisibleSpeed)
-        {
+        if (_isKeyboardSneak)
             _curVisible = false;
-            player.TrySetValueToSkill<Movement>(3);
+        else
+        { 
+            if (!_curVisible && input.magnitude > Config.Instance.InvisibleSpeed)
+            {
+                _curVisible = true;
+                player.TrySetValueToSkill<Movement>(2);
+            }
+            else if (_curVisible && input.magnitude < Config.Instance.InvisibleSpeed)
+            {
+                _curVisible = false;
+                player.TrySetValueToSkill<Movement>(3);
+            }
         }
 
         // smooth increase / decrease of move visibility
@@ -118,6 +124,19 @@ public class Invisibility : Skill
     public override float GetValue(float value)
     {
         return _visibilityValue;
+    }
+
+    public override void SetValue(float value)
+    {
+        if(value == 20)
+        {
+            _isKeyboardSneak = true;
+        }
+        else if(value == 30)
+        {
+            _isKeyboardSneak = false;
+
+        }
     }
 
 }

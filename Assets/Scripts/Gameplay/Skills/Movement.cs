@@ -14,6 +14,7 @@ public class Movement : Skill
     private float _visibilityValue;
     private float speed = 0;
     private float motion = 0;
+    private bool _isKeyboardSneak = false;
 
     public override void Enable()
     {
@@ -34,6 +35,20 @@ public class Movement : Skill
         GetInput();
         Action();
         Animation();
+
+        if (Input.GetKeyDown(KeyCode.RightShift) && _isKeyboardSneak == false)
+        {
+            _isKeyboardSneak = true;
+            player.TrySetValueToSkill<Invisibility>(20);
+
+        }
+        else if (Input.GetKeyUp(KeyCode.RightShift) && _isKeyboardSneak == true)
+        {
+            _isKeyboardSneak = false;
+            player.TrySetValueToSkill<Invisibility>(30);
+
+        }
+
     }
 
     private void GetInput()
@@ -58,7 +73,8 @@ public class Movement : Skill
         speed = Config.Instance.Speed;
         if(player.PlayerNumber == PlayerNumber.Player2)
             speed = Config.Instance.SpeedPlayer2;
-
+        if (_isKeyboardSneak)
+            speed *= 0.8f;
         player.transform.Translate(input * speed * Time.deltaTime * multiply);
 
         if (_slowerMovementInDeepWater)
