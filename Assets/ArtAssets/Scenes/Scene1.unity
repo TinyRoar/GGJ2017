@@ -1259,7 +1259,7 @@ Animator:
   m_GameObject: {fileID: 252426894}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bb9e1e9293030314196cf142b0277929, type: 2}
+  m_Controller: {fileID: 9100000, guid: fc2b44af9ee00ae4a9711d5d62a20853, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1278,10 +1278,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e828149f546e66b4fa5939d98fbdb32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OpenAnimations: []
+  OpenAnimations:
+  - Object: {fileID: 252426896}
+    State: CreditsOpen
   CloseAnimations:
   - Object: {fileID: 252426896}
-    State: MainMenuClose
+    State: CreditsClose
   OpenSound: 
   CloseSound: 
 --- !u!1 &261117868
@@ -1827,7 +1829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &368170517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2057,7 +2059,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 1
-  m_Camera: {fileID: 1577696993}
+  m_Camera: {fileID: 500293658}
   m_PlaneDistance: 50
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7066,7 +7068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1316862974
 Transform:
   m_ObjectHideFlags: 0
@@ -7643,7 +7645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1400424279
 Transform:
   m_ObjectHideFlags: 0
