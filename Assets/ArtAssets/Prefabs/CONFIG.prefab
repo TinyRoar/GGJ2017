@@ -68,7 +68,7 @@ MonoBehaviour:
   SignalRadius: 15
   SignalCoolDown: 3
   StepsVolume: 0.7
-  Timer: 90
+  Timer: 45
   BaseScreenSize:
     x: 1920
     y: 1080
