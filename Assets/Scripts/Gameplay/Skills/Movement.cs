@@ -61,7 +61,10 @@ public class Movement : Skill
 
         player.transform.Translate(input * speed * Time.deltaTime * multiply);
 
-        motion = input.magnitude * speed * multiply;
+        if (_slowerMovementInDeepWater)
+            motion = 1;
+        else
+            motion = input.magnitude * speed * multiply;
     }
 
     private void Animation()
