@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -703,6 +703,14 @@ Prefab:
     - target: {fileID: 423618, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11480288, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
+      propertyPath: FPS
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11480288, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
+      propertyPath: LayerEntries.Array.data[1].Action
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fefa7f543cd5a144eb68609e0e21c6d2, type: 2}
@@ -3298,7 +3306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &645576840
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6136,6 +6144,7 @@ GameObject:
   - component: {fileID: 1203758526}
   - component: {fileID: 1203758525}
   - component: {fileID: 1203758524}
+  - component: {fileID: 1203758528}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -6262,6 +6271,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203758522}
+--- !u!114 &1203758528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203758522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2fdaa05f1d31d4a82ea1d9ea3aad83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactToA: 1
+  ReactToB: 0
+  test: 2
 --- !u!1 &1211553331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,6 +6891,7 @@ GameObject:
   - component: {fileID: 1294989239}
   - component: {fileID: 1294989238}
   - component: {fileID: 1294989237}
+  - component: {fileID: 1294989241}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -6994,6 +7018,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294989235}
+--- !u!114 &1294989241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294989235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2fdaa05f1d31d4a82ea1d9ea3aad83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactToA: 1
+  ReactToB: 0
+  test: 3
 --- !u!1 &1302745187
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,6 +7198,7 @@ GameObject:
   - component: {fileID: 1353116519}
   - component: {fileID: 1353116518}
   - component: {fileID: 1353116517}
+  - component: {fileID: 1353116522}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -7302,6 +7341,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1353116515}
+--- !u!114 &1353116522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353116515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2fdaa05f1d31d4a82ea1d9ea3aad83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactToA: 1
+  ReactToB: 0
+  test: 1
 --- !u!1 &1356977577
 GameObject:
   m_ObjectHideFlags: 0
@@ -8993,6 +9046,7 @@ GameObject:
   - component: {fileID: 1695295642}
   - component: {fileID: 1695295641}
   - component: {fileID: 1695295640}
+  - component: {fileID: 1695295644}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -9119,6 +9173,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695295638}
+--- !u!114 &1695295644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695295638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2fdaa05f1d31d4a82ea1d9ea3aad83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactToA: 0
+  ReactToB: 1
+  test: 
 --- !u!1 &1700693879
 GameObject:
   m_ObjectHideFlags: 0

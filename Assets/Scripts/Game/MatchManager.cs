@@ -60,7 +60,7 @@ public class MatchManager : Singleton<MatchManager>
 
                 // UI
                 UIManager.Instance.Switch(Layer.InGame, UIAction.Hide);
-                UIManager.Instance.Switch(Layer.MainMenu, UIAction.Show);
+                //UIManager.Instance.Switch(Layer.MainMenu, UIAction.Show);
                 UIHandling.Instance.DoEndUI();
 
                 UIManager.Instance.Switch(GameEnvironment.End);
