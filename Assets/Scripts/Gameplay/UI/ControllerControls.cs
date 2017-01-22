@@ -11,7 +11,7 @@ public class ControllerControls : MonoBehaviour
     public bool ReactToB = false;
 
     private bool isAllowed = true;
-
+        
 
     void Update()
     {
@@ -44,7 +44,6 @@ public class ControllerControls : MonoBehaviour
             isAllowed = true;
         });
 
-        Debug.Log(test);
         this.GetComponent<Button>().onClick.Invoke();
     }
 
