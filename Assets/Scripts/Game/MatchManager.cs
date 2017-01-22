@@ -22,6 +22,10 @@ public class MatchManager : Singleton<MatchManager>
                 break;
             case GameplayStatus.MatchStart:
 
+                // disable winner gameobjects
+                UIManager.Instance.GetEnvironment(GameEnvironment.End).Find("LonoWinner").gameObject.SetActive(false);
+                UIManager.Instance.GetEnvironment(GameEnvironment.End).Find("LakaWinner").gameObject.SetActive(false);
+
                 // change players every round
                 PlayerManager.Instance.Player1and2Changed = PlayerManager.Instance.Player1and2Changed ? false : true;
 
@@ -42,20 +46,14 @@ public class MatchManager : Singleton<MatchManager>
                 // Stop Timer
                 GameplayTimer.Instance.Disable();
 
-                // disable winner gameobjects
-                UIManager.Instance.GetEnvironment(GameEnvironment.End).Find("LonoWinner").gameObject.SetActive(false);
-                UIManager.Instance.GetEnvironment(GameEnvironment.End).Find("LakaWinner").gameObject.SetActive(false);
-
                 if (MatchWin)
                 {
-                    UIManager.Instance.Switch(GameEnvironment.End);
                     UIManager.Instance.GetEnvironment(GameEnvironment.End).Find("LonoWinner").gameObject.SetActive(true);
                     UIManager.Instance.Switch(Layer.LonoWin, UIAction.Show);
                     
                 }
                 else
                 {
-                    UIManager.Instance.Switch(GameEnvironment.End);
                     UIManager.Instance.GetEnvironment(GameEnvironment.End).Find("LakaWinner").gameObject.SetActive(true);
                     UIManager.Instance.Switch(Layer.LakaWin, UIAction.Show);
                 }
