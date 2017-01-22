@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-public class FBXScaleFix : AssetPostprocessor
+public class MayaModelFix : AssetPostprocessor
 {
     public void OnPreprocessModel()
     {
